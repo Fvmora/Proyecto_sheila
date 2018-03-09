@@ -1,4 +1,9 @@
-
+body {
+    height: 100vh;
+}
+div.container {
+    height: 100vh;
+}
 :root {
     --color-psicocaeliam: #0063be;
 }
@@ -9,6 +14,7 @@
     padding: 0px;
 } */
 nav.top {
+    
     background-color: rgb(196, 196, 196);
     max-width: 100%;
     min-height:3rem;
@@ -31,8 +37,7 @@ img.tfno_icon, .mail_icon, .face_icon, .linkedin_icon {
 }
 header{   
     max-width: 100%;
-    height:70rem;
-    overflow: hidden;
+
     
     /*   background-image: url(../images/caballos/caballos_sheilaMora-coaching_caballos_psicologia1.jpg);
     background-size: 100% 100%;
@@ -53,39 +58,10 @@ img.logo {
     
 }
 
-/* Esto es para poner un div oscuro sobre la foto. */
-/* div.foto {
-    margin-top: 7%; 
-    position: relative;
-}
-.oscuro{
-    background-color: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 0;
-    top: 0; 
 
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-} */
-img.sycaballo_izq {
-    
-    display: block;
-    max-width: 100%; 
-  
-} 
-/* poner una imagen a cada lado */
-/* img.sycaballo_izq {
-    clear: both;
-    display: block;
-    max-width: 50%; 
-    float: left;
-} 
-img.sycaballo_derech {
-    display: block;
-    max-width: 50%; 
-    float: right;
-}  */
+
+
+
 
 h1 {
     display: none;;
@@ -216,6 +192,89 @@ ul.menu_inicio li a:after {
       width: 50%;
       opacity: 1;
   }
+
+  /* poner una imagen arriba y otra debajo */
+
+figure.img_primera {
+    margin: 0;
+    width: 100%;
+    display: block;
+    height: 40rem;
+    overflow: hidden;
+    position: relative;
+}
+.oscuro{
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    left: 0;
+    top: 0; 
+
+    width: 100%;
+    height: 40rem;
+    z-index: 1;
+} 
+@media screen and (max-width: 1800px) {
+    figure.img_primera {
+        height: 30rem;
+    }
+    .oscuro {
+        height: 30rem;
+    }
+
+}
+
+p.enlace_consulta {
+    position: absolute; 
+    right: 22%; 
+    top: 30%;
+    z-index: 5;
+}
+.aconsulta {
+    text-decoration: none;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Overlock', cursive;
+    letter-spacing: 1px;
+    
+}
+@media screen and (max-width: 1800px) {
+    .aconsulta {
+        font-size: 3rem;
+    }
+}
+
+figure.img_primera:hover .oscuro {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+}
+figure.img_primera:hover .aconsulta{
+    color: var(--color-psicocaeliam);
+    transition: all 0.2 s ease-in-out;
+    transition-duration: 0.50s;
+}
+
+figure.img_segunda {
+    margin: 10% 0 10% 0;
+    width: 100%;
+    display: block;
+    height: 70rem;
+   
+    
+}
+img.paisaje_arriba {
+    
+    display: block;
+    max-width:100%; 
+}
+img.sycaballo_abajo {
+    
+    display: block;
+    max-width: 100%; 
+    
+} 
+
 
 
 
