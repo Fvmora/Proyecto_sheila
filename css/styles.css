@@ -1,9 +1,12 @@
 body {
     height: 100vh;
+    
 }
-div.container {
+wrap {
     height: 100vh;
 }
+
+
 :root {
     --color-psicocaeliam: #0063be;
 }
@@ -201,6 +204,7 @@ ul.menu_inicio li a:after {
   /* main*/
 main {
     min-height: 100vh;
+   
 }
 
 figure.img_primera {
@@ -210,6 +214,7 @@ figure.img_primera {
     height: 40rem;
     overflow: hidden;
     position: relative;
+    margin-bottom: 15rem;
 }
 .oscuro{
     background-color: rgba(0, 0, 0, .3);
@@ -247,6 +252,46 @@ p.enlace_consulta {
     letter-spacing: 1px;
     
 }
+.aconsulta:hover {
+    text-decoration: none;
+    
+}
+/* línea debajo de CONSULTA DE PSICOLOGÍA */
+
+p.enlace_consulta a{
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.aconsulta:before, .aconsulta:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition-duration: 0.75s;
+                transition-duration: 0.75s;
+        opacity: 0;
+      }
+  
+.aconsulta:before {
+        left: calc(50%);
+        background-color: #ad6397;
+      }
+.aconsulta:after {
+    right: calc(50%);
+    background-color: #ad6397;
+  }
+
+  p.enlace_consulta:hover .aconsulta:before, p.enlace_consulta:hover .aconsulta:after{
+      width: 50%;
+      opacity: 1;
+  }
+
+/* lkj */
 @media screen and (max-width: 1800px) {
     .aconsulta {
         font-size: 3rem;
@@ -269,6 +314,7 @@ figure.img_primera:hover .aconsulta{
             transition-duration: 0.50s;
 }
 
+
 /* figure.img_segunda {
     margin: 10% 0 10% 0;
     width: 100%;
@@ -288,13 +334,7 @@ img.paisaje_arriba {
     max-width: 100%; 
     
 }  */
-div.blanco{
-    background-color: white;
-    
-    width: 100%;
-    height: 13rem;
-  
-}
+
 
 div.container_parallax{
    
@@ -309,7 +349,7 @@ div.container_parallax{
     background-image: url("../images/caballos/caballos_sheilaMora-coaching_caballos_psicologia1.jpg");
   
     /* Set a specific height */
-    height: 150rem; 
+    height: 50rem; 
     width: 100%;
     
 
@@ -346,16 +386,202 @@ a.texto {
         color: white;
        
         position: absolute;
-        left: 40%; 
-        top: 50%;
+        left: 10%; 
+        top: 20%;
         -webkit-transition: all 2s ease-in-out;
         transition: all 2s ease-in-out;
         -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-        -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
         animation-name: example;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
     
 }
+.nosotros_article {
+    background-color: black;
+    padding: 3rem;
+    color: #df9527;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+    
+}
+.nosotros_article>h2 {
+    color: white;
+}
+div.overflow {
+    overflow: hidden;
+}
+figure.fig_img_sheila {
+
+   
+    width: 40%;
+    padding: 5rem;
+    margin-bottom: -0.5rem;
+   
+    background-color: black;;
+   
+   
+}
+.img_sheila {
+    border-radius: 20rem;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+div.container_image {
+ 
+    min-height: 80vh;
+    background-color: black;
+
+}
+.caballo_texto {
+    width: 100%;
+    background-image: url("../images/animacion/capa_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    position: relative;
+    
+}
+.animacion {
+    width: 100%;
+    
+}
+
+/* -animacion .caballo_texto- */
+@-webkit-keyframes n1 {
+   
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px; }
+}
+
+/* Standard syntax */
+@keyframes n1 {
+    
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px;} 
+}
+.n1 {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+.container_image:hover .n1 {
+    position: absolute;
+        left: 10%; 
+        top: 50%;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-animation-name: n0; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: n0;
+    animation-duration: 0.5s;
+
+}
+
+@-webkit-keyframes n2 {
+   
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px; }
+}
+
+/* Standard syntax */
+@keyframes n2 {
+    
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px;} 
+}
+.n2 {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+.container_image:hover .n2 {
+    position: absolute;
+        left: 10%; 
+        top: 20%;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-animation-name: n0; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: n0;
+    animation-duration: 0.5s;
+
+}
+
+@-webkit-keyframes n3 {
+   
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px; }
+}
+
+/* Standard syntax */
+@keyframes n3 {
+    
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px;} 
+}
+.n3 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.container_image:hover .n3 {
+    position: absolute;
+        left: 5%; 
+        top: 6%;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-animation-name: n0; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: n0;
+    animation-duration: 0.5s;
+
+}
+
+@-webkit-keyframes n4 {
+   
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px; }
+}
+
+/* Standard syntax */
+@keyframes n4 {
+    
+    50%  {right:200px; ;}
+    75%  { right:0px; ;}
+    100% {right:0px;} 
+}
+.n3 {
+    position: absolute;
+    top: 30%;
+    left: -40%;
+}
+.container_image:hover .n3 {
+    position: absolute;
+        left: 20%; 
+        top: 70%;
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-animation-name: n0; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: n0;
+    animation-duration: 0.5s;
+
+}
+
+
 footer{
     height: 60rem;
     background-color: black;

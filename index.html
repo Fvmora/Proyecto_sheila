@@ -5,6 +5,13 @@
     <meta name="description" content="Consulta de psicología y coaching con caballos">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!--  jquery -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!--  jquery -->
+  <script src="javascript.js" type="javascript"></script>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -17,54 +24,84 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/styles.css">
-
+    <!-- <link rel="stylesheet" href="./css/styles.scss"> -->
     <!-- <link rel="stylesheet" href="./css/bootstrap_grid.css"> -->
     <title>Consulta de psicología y coaching con caballos</title>
     <!--color azul psicocaeliam  #0063be -->
 </head>
 <body>
-    <div class="container">
-        <nav class="top">
-            <span><img class="tfno_icon" src="./images/icons/telefono_gris.png" alt="-icono de telefono"></span>
-            <span>633 05 71 78</span>
-            <span class="mail"><img class="mail_icon" src="./images/icons/mail_icon_gris.png" alt=""></span>
-            <span>info@psicocaeliam.com</span>
-            <span><img class="face_icon" src="./images/icons/facebook_icon_gris.png" alt="facebook_icono"></span>
-            <span><img class="linkedin_icon" src="./images/icons/linkedin_icon_gris.png" alt="linkedin_icono"></span>
-        </nav>
-        <header>
-            <span class="span_logo"><img class="logo" src="./images/logo/PCaeliam_Fbk_v4_851x315.jpg" alt="logo_psicocaeliam"></span>
+    <div class="container-fluid wrap"  id="wrap">
+        <div class="row ">
+            <nav class="top col-12">
+                <span><img class="tfno_icon" src="./images/icons/telefono_gris.png" alt="-icono de telefono"></span>
+                <span>633 05 71 78</span>
+                <span class="mail"><img class="mail_icon" src="./images/icons/mail_icon_gris.png" alt=""></span>
+                <span>info@psicocaeliam.com</span>
+                <span><img class="face_icon" src="./images/icons/facebook_icon_gris.png" alt="facebook_icono"></span>
+                <span><img class="linkedin_icon" src="./images/icons/linkedin_icon_gris.png" alt="linkedin_icono"></span>
+            </nav>
+    
+            <header id="header"  class=" col-12">
+                <span class="span_logo"><img class="logo" src="./images/logo/PCaeliam_Fbk_v4_851x315.jpg" alt="logo_psicocaeliam"></span>
 
-            <h1>Psicocaeliam, psicología sanitaria y coaching con caballos</h1>
-            <nav class="nav_header">
-                <ul class="menu_inicio">
-                    <li class="inicio"><a href="">INICIO</a></li>
-                    <li class="nosotros"><a href="">NOSOTROS</a></li>
-                    <li class="psicologia"><a href="">CONSULTA DE PSICOLOGÍA</a></li>
+                <h1>Psicocaeliam, psicología sanitaria y coaching con caballos</h1>
+                <nav class="nav_header">
+                    <ul class="menu_inicio">
+                        <li class="inicio"><a href="">INICIO</a></li>
+                        <li class="nosotros"><a href="">NOSOTROS</a></li>
+                        <li class="psicologia"><a href="">CONSULTA DE PSICOLOGÍA</a></li>
                     <li class="caballos"><a href="">COACHING CON CABALLOS</a></li>
-                    <li class="talleres"><a href="">TALLERES Y ACTIVIDADES</a></li>
-                    <li class="contacto"><a href="">CONTACTO</a></li>
-                </ul>
-            </nav>           
-        </header>
+                        <li class="talleres"><a href="">TALLERES Y ACTIVIDADES</a></li>
+                        <li class="contacto"><a href="">CONTACTO</a></li>
+                    </ul>
+                </nav>           
+            </header>
+    </div>
         <nav></nav>
-        <main>
-                <figure class="img_primera">
+        <main class="container-fluid">
+            <div class="row">
+                <figure class="img_primera col-xs-12">
                     <img class="paisaje_arriba" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje"> 
                     <div class="oscuro"></div>
                     <p class="enlace_consulta"><a class="aconsulta" href="">CONSULTA DE PSICOLOGÍA</a></p>
-                  
+                 
                 
                 </figure>
-                <div class="blanco"></div>
-                
+            </div> 
+ 
                 <!-- <figure class="img_segunda"> 
                     <img class="sycaballo_abajo" src="./images/pag_primera/caballos_sheila.jpg" alt="Sheila acariciando a un caballo"> 
                 </figure>    -->
-            <div class="container_parallax">
-                <div class="parallax"><a href="#" class="texto">COACHING CON CABALLOS</a></div>
+            <div class="row no-gutters">
+                <div class="container_parallax col-auto">
+                    <div class="parallax"><a href="#" class="texto">COACHING CON CABALLOS</a></div>
+                </div>
             </div>
 
+            <div class="row overflow">
+                <article class="nosotros_article col-6">
+                    <h2>NOSOTROS</h2>
+                    <p>Soy Sheila Mora López, Psicóloga Sanitaria y Coach con Caballos.</p>
+                    <p>En este apartado voy a dar unas pinceladas de mi formación y experiencia profesional, pero intentando no aburrir (quién quiera mas información que no dude en ponerse en contacto).</p>
+                    <p>Desde pequeña me gustaba escuchar a la gente, observar e intentar ayudar en todo lo que podía o estaba a mi alcance. No sabía lo que era la psicología, así que como la mayoría de niños/as quería ser veterinaria, astronauta, etc. Pero una mala praxis de una psicóloga con un familiar mio, me hizo darme cuenta de cuál era mi vocación y cuál quería que fuera mi profesión. Quería evitar que otras personas pasaran por la misma situación que mi familiar (que a día de hoy, gracias a otra colega de profesión está bien). Así que, además de vocacional, soy psicóloga con principios!!</p>
+                    <p>Por ello me he ido formando (y sigo formándome continuamente), primero obtuve la Licenciatura en Psicología en la Universidad Complutense de Madrid. Después hice un Master sobre La Salud de las Mujeres en la Universidad Complutense de Madrid, también soy Magister en Intervención con personas de educación especial, Experta en Orientación e Inserción Laboral, Coach para Titulados en Psicología en Euroinnova Busines School, y entre otros más el que más ilusión me hace Coach con Caballos por la Escuela Internacional de Coaching con Caballos EQUILIBRI.</p>
+                    <p>También he realizado voluntariados en Intervenciones Asistidas con Caballos en las Asociaciones Maira y Equura. Para finalmente decidirme a abrir mi propia consulta de psicología en la clínica del Dr.L.A.Monge (médico nutricionista) al que agradezco su apoyo.</p>
+                    <p>También he colaborado en cursos formativos (como formadora de formadores)  en universidades como la Universidad Rey Juan Carlos, U.N.E.D, La Salle, etc.</p>
+
+                </article>
+                <figure class="fig_img_sheila col-6">
+                    <img class="img_sheila" src="./images/sheila/sheila.jpg" alt="">
+                </figure>
+            </div>
+            <div class="row container_image no-gutters">
+                <figure class="col-6 caballo_texto">
+                    <img class="animacion n0" src="./images/animacion/capa0.png" alt="animacion de texto">
+                    <img class="animacion n1" src="./images/animacion/capa1.png" alt="animacion de texto">
+                    <img class="animacion n2" src="./images/animacion/capa2.png" alt="animacion de texto">
+                    <img class="animacion n3" src="./images/animacion/capa3.png" alt="animacion de texto">
+                    <img class="animacion n4" src="./images/animacion/capa3.png" alt="animacion de texto">
+                </figure>
+            </div>
 
                    
                 
