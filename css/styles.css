@@ -1,21 +1,21 @@
-body {
+body{
+    max-width: 1820px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.wrap {
     height: 100vh;
-    
-}
-wrap {
-    height: 100vh;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
 }
 
 
 :root {
     --color-psicocaeliam: #0063be;
 }
-/* div.container {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-} */
+
 nav.top {
     
     background-color: rgb(196, 196, 196);
@@ -214,7 +214,7 @@ figure.img_primera {
     height: 40rem;
     overflow: hidden;
     position: relative;
-    margin-bottom: 15rem;
+    margin-bottom: 7rem;
 }
 .oscuro{
     background-color: rgba(0, 0, 0, .3);
@@ -236,6 +236,17 @@ figure.img_primera {
     }
    
 
+}
+
+div.flecha1 {
+
+    width: 0; 
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p.enlace_consulta {
@@ -405,28 +416,45 @@ a.texto {
     font-family: 'Lato', sans-serif;
     
 }
+.nosotros_article h4 {
+    color: #dbbb8b
+    
+}
+.nosotros_article p.pr_letra::first-letter {
+    font-size: 1.5rem;
+}
 .nosotros_article>h2 {
     color: white;
 }
 div.overflow {
     overflow: hidden;
 }
-figure.fig_img_sheila {
+.container_img_sheila {
+    
+    width: 100%;
+    background-color: black;
+     
 
+}
+figure.fig_img_sheila {
    
-    width: 40%;
-    padding: 5rem;
-    margin-bottom: -0.5rem;
+    width: 100%;
+    padding: 7%;
+    margin: 0;
+    margin-top: 10%;
    
-    background-color: black;;
+    background-color: black;
+
    
    
 }
 .img_sheila {
+   
     border-radius: 20rem;
     max-width:100%;
     margin-left: auto;
     margin-right: auto;
+   
 
 }
 div.container_image {
@@ -435,7 +463,7 @@ div.container_image {
     background-color: black;
 
 }
-.caballo_texto {
+figure.caballo_texto {
     width: 100%;
     background-image: url("../images/animacion/capa_1.png");
     background-repeat: no-repeat;
@@ -563,12 +591,12 @@ div.container_image {
     75%  { right:0px; ;}
     100% {right:0px;} 
 }
-.n3 {
+.n4 {
     position: absolute;
     top: 30%;
     left: -40%;
 }
-.container_image:hover .n3 {
+.container_image:hover .n4 {
     position: absolute;
         left: 20%; 
         top: 70%;
