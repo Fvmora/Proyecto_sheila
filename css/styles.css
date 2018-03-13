@@ -1,11 +1,13 @@
 body{
-    max-width: 1820px;
+    max-width:100%;
     margin-left: auto;
     margin-right: auto;
+  
+   
 } 
 .wrap {
     height: 100vh;
-    width: 95%;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
@@ -40,6 +42,7 @@ img.tfno_icon, .mail_icon, .face_icon, .linkedin_icon {
 }
 header{   
     max-width: 100%;
+    background-color: white;
 
     
     /*   background-image: url(../images/caballos/caballos_sheilaMora-coaching_caballos_psicologia1.jpg);
@@ -71,6 +74,7 @@ h1 {
 
 }
 nav.nav_header {
+    background-color: white;
     float: left;
     display:block;
     min-height: 2rem;
@@ -237,17 +241,17 @@ figure.img_primera {
    
 
 }
-
+/* revisar la flecha quizas hay que poner un fontawesome */
 div.flecha1 {
-
     width: 0; 
     height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-top: 30px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid black;
     margin-left: auto;
     margin-right: auto;
 }
+
 
 p.enlace_consulta {
     position: absolute; 
@@ -407,6 +411,7 @@ a.texto {
         animation-duration: 0.5s;
     
 }
+
 .nosotros_article {
     background-color: black;
     padding: 3rem;
@@ -423,15 +428,15 @@ a.texto {
 .nosotros_article p.pr_letra::first-letter {
     font-size: 1.5rem;
 }
-.nosotros_article>h2 {
+.nosotros_article h2 {
     color: white;
 }
-div.overflow {
+.overflow {
     overflow: hidden;
 }
 .container_img_sheila {
     
-    width: 100%;
+    width: 80%;
     background-color: black;
      
 
