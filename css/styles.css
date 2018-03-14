@@ -218,7 +218,7 @@ figure.img_primera {
     height: 40rem;
     overflow: hidden;
     position: relative;
-    margin-bottom: 7rem;
+    /* margin-bottom:5%; */
 }
 .oscuro{
     background-color: rgba(0, 0, 0, .3);
@@ -242,15 +242,21 @@ figure.img_primera {
 
 }
 /* revisar la flecha quizas hay que poner un fontawesome */
-div.flecha1 {
-    width: 0; 
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 50px solid black;
-    margin-left: auto;
-    margin-right: auto;
+div.flecha {
+    width: 100%; 
+    
+   
+    
 }
+div.flecha a {
+    width: 100%;
+    color: black;
+    display: block;
+    
+    text-align: center;
+    font-size: 10rem;
+}
+
 
 
 p.enlace_consulta {
@@ -470,10 +476,10 @@ div.container_image {
 }
 figure.caballo_texto {
     width: 100%;
-    background-image: url("../images/animacion/capa_1.png");
+    background-image: url("../images/animacion/caballo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -613,6 +619,9 @@ figure.caballo_texto {
     animation-duration: 0.5s;
 
 }
+
+
+
 
 
 footer{
