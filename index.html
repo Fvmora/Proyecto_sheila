@@ -1,140 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Consulta de psicología y coaching con caballos">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <!--  jquery -->
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <!--  jquery -->
- <!--  fontawesome -->
- <script defer src="./fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
- <!--  fontawesome -->
-  <script src="javascript.js" type="javascript"></script>
+    <!--  jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!--  jquery -->
+    <!--  fontawesome -->
+    <script defer src="./fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+    <!--  fontawesome -->
+
     <link rel="shortcut icon" href="favicon.png" type="image/png">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" 
-    href="./css/normalize.css">
-   <!--  bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--  bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="./css/bootstrap_grid.css"> -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- <link rel="stylesheet" href="./css/styles.scss"> -->
-    
+
     <title>Consulta de psicología y coaching con caballos</title>
     <!--color azul psicocaeliam  #0063be -->
 </head>
+
 <body>
     <div class="container-fluid wrap">
         <div class="row no-gutters">
             <nav class="top col-12">
-                <span><img class="tfno_icon" src="./images/icons/telefono_gris.png" alt="-icono de telefono"></span>
+                <span>
+                    <img class="tfno_icon" src="./images/icons/telefono_gris.png" alt="-icono de telefono">
+                </span>
                 <span>633 05 71 78</span>
-                <span class="mail"><img class="mail_icon" src="./images/icons/mail_icon_gris.png" alt=""></span>
+                <span class="mail">
+                    <img class="mail_icon" src="./images/icons/mail_icon_gris.png" alt="">
+                </span>
                 <span>info@psicocaeliam.com</span>
-                <span><img class="face_icon" src="./images/icons/facebook_icon_gris.png" alt="facebook_icono"></span>
-                <span><img class="linkedin_icon" src="./images/icons/linkedin_icon_gris.png" alt="linkedin_icono"></span>
+                <span>
+                    <img class="face_icon" src="./images/icons/facebook_icon_gris.png" alt="facebook_icono">
+                </span>
+                <span>
+                    <img class="linkedin_icon" src="./images/icons/linkedin_icon_gris.png" alt="linkedin_icono">
+                </span>
             </nav>
-    
-            <header id="header"  class=" col-12">
-                <span class="span_logo"><img class="logo" src="./images/logo/PCaeliam_Fbk_v4_851x315.jpg" alt="logo_psicocaeliam"></span>
+
+            <header id="header" class=" col-12">
+                <span class="span_logo">
+                    <img class="logo" src="./images/logo/PCaeliam_Fbk_v4_851x315.jpg" alt="logo_psicocaeliam">
+                </span>
 
                 <h1>Psicocaeliam, psicología sanitaria y coaching con caballos</h1>
                 <nav class="nav_header">
                     <ul class="menu_inicio">
-                        <li class="inicio"><a href="">INICIO</a></li>
-                        <li class="nosotros"><a href="#nosotros">NOSOTROS</a></li>
-                        <li class="psicologia"><a href="">CONSULTA DE PSICOLOGÍA</a></li>
-                    <li class="caballos"><a href="">COACHING CON CABALLOS</a></li>
-                        <li class="talleres"><a href="">TALLERES Y ACTIVIDADES</a></li>
-                        <li class="contacto"><a href="">CONTACTO</a></li>
+                        <li class="inicio underline">
+                            <a href="">INICIO</a>
+                        </li>
+                        <li class="equipo underline">
+                            <a href="#ningun_sitio" id="button_equipo">EQUIPO</a>
+                            <ul class="desplegable_equipo" id="desp_equip">
+                                <li>
+                                    <a href="#" class="equipo_li">MISIÓN, VISIÓN Y VALORES</a>
+                                </li>
+                                <li>
+                                    <a href="#equipo" class="equipo_li">QUIÉN GUÍA PSICOCAELIAM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="psicologia underline">
+                            <a href="">PSICOLOGÍA</a>
+                        </li>
+                        <li class="coaching underline">
+                            <a href="#ningun_sitio" id="button_coach">COACHING</a>
+                            <ul class="desplegable_coaching" id="desp_coach">
+                                <li class="li_block">
+                                    <a class="a_coaching" href="#" class="coach">COACHING</a>
+                                </li>
+                                <li class="li_block">
+                                    <a class="a_coaching" href="#enlace1" class="caballos">CABALLOS</a>
+                                </li>
+                            </ul>
+                                
+                        </li>
+                        <li class="contacto underline">
+                            <a href="">CONTACTO</a>
+                        </li>
+                        <li class="blog underline">
+                            <a href="">BLOG</a>
+                        </li>
+
                     </ul>
-                </nav>           
+                </nav>
             </header>
-    </div>
+        </div>
         <nav></nav>
         <main class="container-fluid">
             <div class="row">
                 <figure class="img_primera col-xs-12">
-                    <img class="paisaje_arriba" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje"> 
+                    <img class="paisaje_arriba" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje">
                     <div class="oscuro"></div>
-                    <p class="enlace_consulta"><a class="aconsulta" href="">CONSULTA DE PSICOLOGÍA</a></p>
-                 
-                
+                    <p class="enlace_consulta">
+                        <a class="aconsulta" href="">CONSULTA DE PSICOLOGÍA</a>
+                    </p>
+
+
                 </figure>
             </div>
             <div class="row no-gutters">
-                <div class="flecha col-12"> <a href="#nosotros"><i class="fas fa-arrow-alt-circle-down"></i></a></div>
-            </div> 
- 
-                <!-- <figure class="img_segunda"> 
+                <div class="flecha col-12">
+                    <a href="#nosotros">
+                        <i class="fas fa-arrow-alt-circle-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <figure class="img_segunda"> 
                     <img class="sycaballo_abajo" src="./images/pag_primera/caballos_sheila.jpg" alt="Sheila acariciando a un caballo"> 
                 </figure>    -->
-            <div class="row no-gutters" >
+            <div class="row no-gutters">
                 <div class="container_parallax col-12">
-                    <div class="parallax"><a href="#" class="texto">COACHING CON CABALLOS</a></div>
+                    <div class="parallax">
+                        <a href="#" class="texto">COACHING CON CABALLOS</a>
+                    </div>
                 </div>
             </div>
 
             <div class="row overflow">
-                <article id="nosotros" class="nosotros_article col-6">
+                <article id="equipo" class="nosotros_article col-6">
                     <section>
                         <h2>NOSOTROS</h2>
                         <p class="pr_letra">Soy Sheila Mora López, Psicóloga Sanitaria y Coach con Caballos.</p>
-                        <p>En este apartado voy a dar unas pinceladas de mi formación y experiencia profesional, pero intentando no aburrir (quién quiera mas información que no dude en ponerse en contacto).</p>
+                        <p>En este apartado voy a dar unas pinceladas de mi formación y experiencia profesional, pero intentando
+                            no aburrir (quién quiera mas información que no dude en ponerse en contacto).</p>
                     </section>
                     <section>
                         <h4>MOTIVACIÓN</h4>
-                        <p class="pr_letra">Desde pequeña me gustaba escuchar a la gente, observar e intentar ayudar en todo lo que podía o estaba a mi alcance. No sabía lo que era la psicología, así que como la mayoría de niños/as quería ser veterinaria, astronauta, etc. Pero una mala praxis de una psicóloga con un familiar mio, me hizo darme cuenta de cuál era mi vocación y cuál quería que fuera mi profesión. Quería evitar que otras personas pasaran por la misma situación que mi familiar (que a día de hoy, gracias a otra colega de profesión está bien). Así que, además de vocacional, soy psicóloga con principios!!</p>
+                        <p class="pr_letra">Desde pequeña me gustaba escuchar a la gente, observar e intentar ayudar en todo lo que podía o estaba
+                            a mi alcance. No sabía lo que era la psicología, así que como la mayoría de niños/as quería ser
+                            veterinaria, astronauta, etc. Pero una mala praxis de una psicóloga con un familiar mio, me hizo
+                            darme cuenta de cuál era mi vocación y cuál quería que fuera mi profesión. Quería evitar que
+                            otras personas pasaran por la misma situación que mi familiar (que a día de hoy, gracias a otra
+                            colega de profesión está bien). Así que, además de vocacional, soy psicóloga con principios!!</p>
                     </section>
                     <section>
                         <h4>FORMACIÓN</h4>
-                        <p class="pr_letra">Por ello me he ido formando (y sigo formándome continuamente), primero obtuve la Licenciatura en Psicología en la Universidad Complutense de Madrid. Después hice un Master sobre La Salud de las Mujeres en la Universidad Complutense de Madrid, también soy Magister en Intervención con personas de educación especial, Experta en Orientación e Inserción Laboral, Coach para Titulados en Psicología en Euroinnova Busines School, y entre otros más el que más ilusión me hace Coach con Caballos por la Escuela Internacional de Coaching con Caballos EQUILIBRI.</p>
-                        <p>También he realizado voluntariados en Intervenciones Asistidas con Caballos en las Asociaciones Maira y Equura. Para finalmente decidirme a abrir mi propia consulta de psicología en la clínica del Dr.L.A.Monge (médico nutricionista) al que agradezco su apoyo. Y he colaborado en cursos formativos (como formadora de formadores)  en universidades como la Universidad Rey Juan Carlos, U.N.E.D, La Salle, etc.</p>
+                        <p class="pr_letra">Por ello me he ido formando (y sigo formándome continuamente), primero obtuve la Licenciatura en
+                            Psicología en la Universidad Complutense de Madrid. Después hice un Master sobre La Salud de
+                            las Mujeres en la Universidad Complutense de Madrid, también soy Magister en Intervención con
+                            personas de educación especial, Experta en Orientación e Inserción Laboral, Coach para Titulados
+                            en Psicología en Euroinnova Busines School, y entre otros más el que más ilusión me hace Coach
+                            con Caballos por la Escuela Internacional de Coaching con Caballos EQUILIBRI.</p>
+                        <p>También he realizado voluntariados en Intervenciones Asistidas con Caballos en las Asociaciones Maira
+                            y Equura. Para finalmente decidirme a abrir mi propia consulta de psicología en la clínica del
+                            Dr.L.A.Monge (médico nutricionista) al que agradezco su apoyo. Y he colaborado en cursos formativos
+                            (como formadora de formadores) en universidades como la Universidad Rey Juan Carlos, U.N.E.D,
+                            La Salle, etc.</p>
                     </section>
 
                 </article>
-                
+
                 <article class="container_img_sheila col-6">
                     <figure class="fig_img_sheila ">
                         <img class="img_sheila" src="./images/sheila/sheila.jpg" alt="La psicóloga Sheila Mora mira directamente a la cámara sonriente.">
                     </figure>
-                </article> 
+                </article>
             </div>
+            <section>
+                <div class="row container_image no-gutters overflow" id="enlace1">
+                    <figure class="col-6 caballo_texto ">
+                        <img class="animacion n0" src="./images/animacion/capa0.png" alt="animacion de texto">
+                        <img class="animacion n1" src="./images/animacion/capa1.png" alt="animacion de texto">
+                        <img class="animacion n2" src="./images/animacion/capa2.png" alt="animacion de texto">
+                        <img class="animacion n3" src="./images/animacion/capa3.png" alt="animacion de texto">
+                        <img class="animacion n4" src="./images/animacion/capa3.png" alt="animacion de texto">
+                    </figure>
 
-            <div class="row container_image no-gutters overflow" id="enlace1">
-                <figure class="col-6 caballo_texto ">
-                    <img class="animacion n0" src="./images/animacion/capa0.png" alt="animacion de texto">
-                    <img class="animacion n1" src="./images/animacion/capa1.png" alt="animacion de texto">
-                    <img class="animacion n2" src="./images/animacion/capa2.png" alt="animacion de texto">
-                    <img class="animacion n3" src="./images/animacion/capa3.png" alt="animacion de texto">
-                    <img class="animacion n4" src="./images/animacion/capa3.png" alt="animacion de texto">
-                </figure>
-                
-            </div>
+                </div>
+                <nav class="row menu_coaching_cab">
+                    <ul class="col-12 menu_coach_centrado">
+                        <li>DESARROLLO PERSONAL</li>
+                        <li>TALLERES</li>
+                    </ul>
+                </nav>
+                </nav>
+            </section>
 
-                   
-                
-            
+
+
         </main>
         <aside></aside>
         <footer>
-           
+
         </footer>
 
 
     </div>
-  <!--   bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--   bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--  acaba bootstrap -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
