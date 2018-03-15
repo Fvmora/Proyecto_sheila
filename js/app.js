@@ -1,24 +1,52 @@
 
 $(document).ready(function (e) {
 
-    var on = $('#button_equipo');
-    var off = $('#desp_equip');
-    var on1 = $('#button_coach');
-    var off1 = $('#desp_coach');
+    var a = $('#button_equipo');
+    var b = $('#desp_equip');
+    var c = $('#button_coach');
+    var d = $('#desp_coach');
 
+/* desplegable equipo */
+    a.mouseenter(function (e) {
 
-    on.click(function (e) {
-
-        off.slideToggle();
-
-
-    })
-    on1.click(function (e) {
-
-       off1.slideToggle();
+        b.slideDown();
 
 
     })
+    c.mouseenter(function (e) {
+
+        d.slideDown();
+
+
+    })
+    b.mouseleave(function (e) {
+
+        b.slideUp();
+
+
+    })
+    d.mouseleave(function (e) {
+
+        d.slideUp();
+
+
+    })
+    function offUp(){
+        b.slideUp();
+        d.slideUp();
+    }
+    a,c.mouseout(setInterval(offUp, 5000));
+
+/* desplegable coaching */
+clearInterval();
+
+
+  
+    
+   
+
+   
+    
     
 
     

@@ -1,0 +1,30 @@
+{
+  "name": "proyecto_sheila",
+  "version": "1.0.0",
+  "description": "página web sheila",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fvmora/Proyecto_sheila.git"
+  },
+  "keywords": [
+    "sheila",
+    "psicología",
+    "coaching",
+    "caballos",
+    "talleres"
+  ],
+  "author": "Fernando Velasco Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fvmora/Proyecto_sheila/issues"
+  },
+  "homepage": "https://github.com/Fvmora/Proyecto_sheila#readme",
+  "dependencies": {
+    "g": "^2.0.1",
+    "http-server": "^0.11.1"
+  }
+}
