@@ -1,0 +1,332 @@
+body{
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+   
+} 
+.wrap {
+    height: 100vh;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+
+
+:root {
+    --color-psicocaeliam: #0063be;
+}
+
+nav.top {
+    
+    background-color: rgb(196, 196, 196);
+    max-width: 100%;
+    min-height:3rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    padding: .4rem;
+}
+nav.top span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span.mail {
+    margin-left: 2rem;
+}
+img.tfno_icon, .mail_icon, .face_icon, .linkedin_icon {
+    height: 2rem;
+}
+header{   
+    max-width: 100%;
+    background-color: white;
+
+    
+    /*   background-image: url(../images/caballos/caballos_sheilaMora-coaching_caballos_psicologia1.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+}
+.span_logo {
+    display: block;
+    max-width: 20%;
+    float:left;
+}
+
+img.logo {
+    max-width: 100%;
+    display: block;
+    /* position: relative;
+    left: 0px;
+    top: 0px;  */
+    
+}
+
+
+
+
+
+
+h1 {
+    display: none;
+
+}
+nav.nav_header {
+    background-color: white;
+    float: left;
+    display:block;
+    min-height: 2rem;
+    width: 80%;
+   /*  position: absolute;;
+    right: 0rem;
+    top: 2rem; 
+     */
+    margin-top: 3%;
+      
+}
+@media screen and (max-width: 1700px) {
+    nav.nav_header{
+        margin-top: 3.4%;
+    }
+    
+}
+
+ul.menu_inicio {
+  display: block;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+ul.menu_inicio li.inicio {
+    width: 16%;
+    text-align: center;
+}
+ul.menu_inicio li.equipo {
+    width: 13%;
+    text-align: center;
+    position: relative;
+  
+}
+ul.desplegable_equipo {
+    width: 25rem;
+    height: 9rem;
+    display: none;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    z-index: 5000; 
+     
+    
+}
+
+
+ul.desplegable_equipo li {
+    margin-top: 2rem;
+
+}
+a.equipo_li.equipo_li {
+    color: rgb(165, 116, 42);
+}
+a.equipo_li.equipo_li:hover {
+    color: #0063be;
+}
+/* ul.menu_inicio li.equipo:hover ul.desplegable_equipo{
+    display: block;
+    width: 50rem;
+    height: 
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    z-index: 50000;
+} */
+ul.menu_inicio li.psicologia {
+    width: 16%;
+    text-align: center;
+}
+ul.menu_inicio li.coaching {
+    width: 16%;
+    text-align: center;
+    position: relative;
+}
+ul.desplegable_coaching {
+    width: 15rem;
+    height: 9rem;
+    display: none;
+    background-color: rgb(245, 245, 245);
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    z-index: 5000;  
+    
+    
+}
+ul.desplegable_coaching li.li_block {
+    margin-top: 2rem;
+    display: block;
+
+}
+
+
+.a_coaching.a_coaching:hover {
+    color: #0063be;
+}
+ul.menu_inicio li.contacto {
+    width: 14%;
+    text-align: center;
+}
+ul.menu_inicio li.blog {
+    width: 20%;
+    text-align: center;
+}
+
+ul.menu_inicio li{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    
+}
+@media screen and (max-width: 1900px) {
+    ul.menu_inicio li{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 1600px) {
+    ul.menu_inicio li{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1500px) {
+    ul.menu_inicio li{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    ul.menu_inicio li{
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    ul.menu_inicio li{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    ul.menu_inicio li{
+        font-size: 0.5rem;
+    }
+}
+
+
+
+ul.menu_inicio>li.underline a{
+    text-decoration: none;
+    color: rgb(165, 116, 42);
+    
+}
+
+ul.menu_inicio>li.underline {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+ul.menu_inicio>li.underline a:before, ul.menu_inicio>li.underline a:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition-duration: 0.75s;
+                transition-duration: 0.75s;
+        opacity: 0;
+      }
+  
+ul.menu_inicio>li.underline a:before {
+        left: calc(50%);
+        background-color: #ad6397;
+      }
+ul.menu_inicio>li.underline a:after {
+    right: calc(50%);
+    background-color: #ad6397;
+  }
+
+ul.menu_inicio>li.underline:hover a:before, ul.menu_inicio>li.underline:hover a:after{
+      width: 45%;
+      opacity: 1;
+  }
+  ul.menu_inicio>li.underline.psicologia:hover a:before, ul.menu_inicio>li.underline.psicologia:hover a:after{
+    width:30%;
+  }
+  ul.menu_inicio>li.underline.coaching:hover a:before, ul.menu_inicio>li.underline.coaching:hover a:after{
+      width: 30%;
+  }
+  ul.menu_inicio>li.underline.contacto:hover a:before, ul.menu_inicio>li.underline.contacto:hover a:after{
+    width: 50%;
+}
+  ul.menu_inicio>li.underline.blog:hover a:before, ul.menu_inicio>li.underline.blog:hover a:after{
+      width: 20%;
+      
+  }
+  
+
+/*  hasta aquí el menú del header */
+/* 
+Empieza el main */
+
+
+main {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    line-height: 1.5rem;
+}
+section {
+    display: block;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h2 {
+    text-align: center;
+}
+div.cont_image {
+    padding-top: 5%;
+}
+figure {
+    width: 100%
+}
+img.img_valores {
+    width: 100%;
+   
+}
+
+
+
+
+
+
+/* icono arriba */
+div.icon_arriba_cont {
+    position: fixed;
+    bottom: 1%; 
+    right: 2%;
+    z-index: 2000000;
+
+}
+.icon_arriba a{
+    font-size: 2rem;
+    color: black;
+
+}
+.icon_arriba a:hover{
+    color: var(--color-psicocaeliam);
+}
