@@ -33,7 +33,7 @@
 </head>
 
 <body id="body">
-    <div class="container-fluid wrap"> 
+    <div class="container-fluid wrap">
         <div class="row no-gutters">
             <nav class="top col-12">
                 <span>
@@ -67,7 +67,7 @@
                             <a href="#ningun_sitio" id="button_equipo">EQUIPO</a>
                             <ul class="desplegable_equipo" id="desp_equip">
                                 <li>
-                                    <a href="#" class="equipo_li">MISIÓN, VISIÓN Y VALORES</a>
+                                    <a href="html/valores.html" class="equipo_li">MISIÓN, VISIÓN Y VALORES</a>
                                 </li>
                                 <li>
                                     <a href="#equipo" class="equipo_li">QUIÉN GUÍA PSICOCAELIAM</a>
@@ -87,10 +87,10 @@
                                     <a class="a_coaching" href="#enlace1" class="caballos">CABALLOS</a>
                                 </li>
                             </ul>
-                                
+
                         </li>
                         <li class="contacto underline">
-                            <a href="">CONTACTO</a>
+                            <a href="#formulario">CONTACTO</a>
                         </li>
                         <li class="blog underline">
                             <a href="">BLOG</a>
@@ -104,8 +104,10 @@
         <main class="container-fluid">
             <div class="row">
                 <figure class="img_primera col-xs-12">
-                    <img class="paisaje_arriba" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje">
-                    <div class="oscuro"></div>
+                    <img class="paisaje_arriba" src="./images/pag_primera/buena1 copia 2.png" alt="Paisaje">
+                    <img class="paisaje_debajo" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje">
+                    <video class="video1" src="./images/videos/Rock_ Water Meeting (1).mp4" autoplay preloaded muted loop></video>
+                    <!--  <div class="oscuro"></div> -->
                     <p class="enlace_consulta">
                         <a class="aconsulta" href="">CONSULTA DE PSICOLOGÍA</a>
                     </p>
@@ -127,12 +129,16 @@
             <div class="row no-gutters">
                 <div class="container_parallax col-12">
                     <div class="parallax">
-                        <a href="#" class="texto">COACHING CON CABALLOS</a>
+                        <!-- <a href="#" class="texto">COACHING CON CABALLOS</a> -->
                     </div>
                 </div>
             </div>
             <div class="row no-gutters icon_arriba_cont">
-                <div class="col-12 icon_arriba"><a href="#header"><i class="fas fa-arrow-circle-up"></i></a></div>
+                <div class="col-12 icon_arriba">
+                    <a href="#header">
+                        <i class="fas fa-arrow-circle-up"></i>
+                    </a>
+                </div>
             </div>
 
             <div class="row overflow">
@@ -188,19 +194,83 @@
                 </div>
                 <nav class="row menu_coaching_cab">
                     <ul class="col-12 menu_coach_centrado">
-                        <li><a href="#">¿QUÉ ES EL COACHING CON CABALLOS?</a></li>
-                        <li><a href="#">DESARROLLO</a></li>
-                        <li><a href="#">TALLERES</a></li>
-                        <li><a href="#">FORMACIÓN EMPRESARIAL</a></li>
+                        <li>
+                            <a href="#">¿QUÉ ES EL COACHING CON CABALLOS?</a>
+                        </li>
+                        <li>
+                            <a href="#">DESARROLLO</a>
+                        </li>
+                        <li>
+                            <a href="#">TALLERES</a>
+                        </li>
+                        <li>
+                            <a href="#">FORMACIÓN EMPRESARIAL</a>
+                        </li>
                     </ul>
                 </nav>
                 </nav>
             </section>
+            <div class="negro"></div>
 
+            <section class="seccion_contacto" id="formulario">
+                <div class="row">
+                    <h2 class="contacto col-12">CONTACTO</h2>
+                </div>
+                
+                <div class="row col-12">
+
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Datos personales</legend>
+                            <div class="control-group">
+                                <label for="nombre">Escribe tu nombre</label>
+
+                                <input type="text" name="nombre" id="nombre">
+                            </div>
+                            <div class="control-group">
+                                <label for="apellidos">Escribe tu apellidos</label>
+
+                                <input type="text" name="apellidos" id="apellidos">
+                            </div>
+                            <div class="control-group">
+                                <label for="mail">Escribe tu email</label>
+
+                                <input type="email" name="mail" id="mail">
+                            </div>
+                            <div class="control-group textarea">
+                               <!--  <label class="consulta" for="consulta">Escribe tu consulta</label> -->
+                                <textarea class="t_area" name="consulta" id="consulta" cols="50" rows="10" placeholder="Escribe tu consulta"></textarea>
+                            </div>
+                           
+                        </fieldset>
+                        <div class="button-group">
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Borrar</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="row">
+                    <div class="map col-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.752429206305!2d-3.4766119488588947!3d40.45861616091322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42371dd031fe15%3A0xced883a6f0d4c738!2sCalle+de+la+Virgen+de+la+Paz%2C+2%2C+28850+Torrej%C3%B3n+de+Ardoz%2C+Madrid!5e0!3m2!1ses!2ses!4v1521546999025" width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                
+            </section>
+            <aside>
+                    <div class=" col-12">
+                        <p class="info_contacto">Estamos en la c/Virgen de la Paz 2, 1ºC Torrejón de Ardoz(Madrid) </p>
+                    </div>
+                </aside>
+            
 
 
         </main>
-        <aside></aside>
+       
         <footer>
 
         </footer>

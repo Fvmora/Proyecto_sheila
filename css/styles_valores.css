@@ -285,18 +285,44 @@ Empieza el main */
 
 main {
     position: relative;
-    padding-top: 3%;
+    padding-top: 1%;
     padding-bottom: 3%;
     line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+h2.mvv {
+    width: 60%;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+    color: black;
+    font-size: 3rem;
 }
 section {
     display: block;
     padding-left: 3%;
     padding-right: 3%;
+    
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
+    display: block;
     text-align: center;
+    font-family: 'Overlock', cursive;
+    color: #df9527;
+    
+    
+}
+h2:not(:nth-of-type(4)){
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+p.abajo {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
 }
 div.cont_image {
     padding-top: 5%;
