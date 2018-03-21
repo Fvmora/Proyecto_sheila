@@ -900,6 +900,7 @@ footer{
     height: 7rem;
     background-color: rgb(0,0,0);
     color: #df9527;
+    overflow: hidden;
     
 }
 footer div p {
