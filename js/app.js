@@ -35,7 +35,7 @@ $(document).ready(function (e) {
         b.slideUp();
         d.slideUp();
     }
-    a,c.mouseout(setInterval(offUp, 5000));
+    a,c.mouseout(setInterval(offUp, 6000));
 
 /* desplegable coaching */
 clearInterval();
