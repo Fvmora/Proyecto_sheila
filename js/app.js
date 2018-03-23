@@ -8,6 +8,14 @@ setTimeout(function(){
 
 
 $(document).ready(function (e) {
+    $('#idea').mouseenter(function (e) {
+       
+        $('#noble').fadeIn(1000);
+        $('#noble1').fadeIn(3000);
+        $('#noble2').fadeIn(5000);
+    
+    });
+
 
     var a = $('#button_equipo');
     var b = $('#desp_equip');

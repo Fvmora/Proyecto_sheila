@@ -355,6 +355,7 @@ figure.img_primera:hover .paisaje_debajo {
     transition: all 0.2s ease-in-out;
     -webkit-transition-duration:2s;
             transition-duration: 2s;
+    
 }
 img.paisaje_arriba {
     position: absolute;
@@ -370,6 +371,7 @@ video.video1 {
 
     position: absolute;
     z-index: 0;  
+
     
 }
 
@@ -524,6 +526,43 @@ div.container_parallax{
     background-repeat: no-repeat;
     background-size: contain;
 }
+div.parallax p.noble{
+    
+    display: none;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    z-index: 40000;
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 1px;
+   
+}
+div.parallax p.noble1{
+    
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    z-index: 40000;
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 1px;
+   
+}
+div.parallax p.noble2{
+    
+    display: none;
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+    z-index: 40000;
+    font-size: 3rem;
+    color: black;
+    letter-spacing: 1px;
+   
+}
+
 
  /* Safari 4.0 - 8.0 */
 /* @-webkit-keyframes example {
@@ -836,9 +875,14 @@ div.negro {
 /* Form */
 .seccion_contacto {
     margin-top: 5%;
+    background-image: url('../images/pag_primera/contacto_fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 2%;
+    
 }
 h2.contacto {
-    margin-top: 3%;
+    
     text-align: center;
     font-size: 3rem;
     letter-spacing: 1px;
@@ -851,7 +895,7 @@ form {
      border: 1px solid black;
      border-radius: 10px;
      padding: 4rem;
-     background-color: rgba(245, 245, 245, 1);
+     background-color: rgba(245, 245, 245, 0.8);
 }
 legend {
     font-family: 'Overlock', cursive;
@@ -865,25 +909,30 @@ label {
 }
 input {
     width: 40%;
+    
    
+}
+input:focus {
+    background-color: #dfb679;
 }
 textarea {
     float:left;
     margin-top: 5%;
 }
 
-.button-group {
-    float: right;
-}
+
 .right {
     float: left;
     margin-top: 10%;
     margin-left:15%;
     color: var( --color-psicocaeliam);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     letter-spacing: 1px;
     font-weight: 500;
    
+}
+.button-group {
+    float: right;
 }
 iframe {
     clear: both;

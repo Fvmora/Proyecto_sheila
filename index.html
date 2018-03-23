@@ -93,10 +93,10 @@
                             <a href="#ningun_sitio" id="button_coach">COACHING</a>
                             <ul class="desplegable_coaching" id="desp_coach">
                                 <li class="li_block">
-                                    <a class="a_coaching" href="#" class="coach">COACHING</a>
+                                    <a class="a_coaching coach" href="#" >COACHING</a>
                                 </li>
                                 <li class="li_block">
-                                    <a class="a_coaching" href="#enlace1" class="caballos">CABALLOS</a>
+                                    <a class="a_coaching caballos" href="#enlace1">CABALLOS</a>
                                 </li>
                             </ul>
 
@@ -115,10 +115,10 @@
         <nav></nav>
         <main class="container-fluid">
             <div class="row">
-                <figure class="img_primera col-xs-12" id="act_texto_parallax">
+                <figure class="img_primera col-xs-12">
                     <img class="paisaje_arriba" src="./images/pag_primera/buena1 copia 2.png" alt="Paisaje">
                     <img class="paisaje_debajo" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje">
-                    <video class="video1" src="./images/videos/Rock_ Water Meeting (1).mp4" autoplay preloaded muted loop></video>
+                    <video class="video1" src="./images/videos/Rock_ Water Meeting (1).mp4" autoplay preload muted loop></video>
                     <!--  <div class="oscuro"></div> -->
                     <p class="enlace_consulta">
                         <a class="aconsulta" href="">CONSULTA DE PSICOLOGÍA</a>
@@ -127,9 +127,9 @@
 
                 </figure>
             </div>
-            <div class="row no-gutters">
-                <div class="flecha col-12">
-                    <a href="#equipo">
+            <div class="row no-gutters" >
+                <div class="flecha col-12" >
+                    <a href="#equipo" >
                         <i class="fas fa-arrow-alt-circle-down"></i>
                     </a>
                 </div>
@@ -139,9 +139,16 @@
                     <img class="sycaballo_abajo" src="./images/pag_primera/caballos_sheila.jpg" alt="Sheila acariciando a un caballo"> 
                 </figure>    -->
             <div class="row no-gutters">
-                <div class="container_parallax col-12">
-                    <div class="parallax">
-                        <!-- texto parallax -->
+                <div class="container_parallax col-12"  id="idea" >
+                     
+                    <div class="parallax" >
+                       <!-- texto parallax -->
+                     <p class="noble" id="noble">Los caballos son el animal mas noble que existe.</p>
+                     <p class="noble1" id="noble1">Los caballos son el animal mas noble que existe.</p>
+                     <p class="noble2" id="noble2">Los caballos son el animal mas noble que existe.</p>
+
+                     <!-- texto parallax -->
+
                         <!-- <a href="#" class="texto">COACHING CON CABALLOS</a> -->
                     </div>
                 </div>
@@ -155,7 +162,7 @@
             </div>
 
             <div class="row overflow">
-                <article id="equipo" class="nosotros_article col-6">
+                <article id="equipo" class="nosotros_article  col-12 col-md-6">
                     <section>
                         <h2>EQUIPO</h2>
                         <p class="pr_letra">Soy Sheila Mora López, Psicóloga Sanitaria y Coach con Caballos.</p>
@@ -188,7 +195,7 @@
 
                 </article>
 
-                <article class="container_img_sheila col-6">
+                <article class="container_img_sheila  col-12   col-md-6">
                     <figure class="fig_img_sheila ">
                         <img class="img_sheila" src="./images/sheila/sheila.jpg" alt="La psicóloga Sheila Mora mira directamente a la cámara sonriente.">
                     </figure>
@@ -221,7 +228,7 @@
                         </li>
                     </ul>
                 </nav>
-                </nav>
+               
             </section>
             <div class="negro"></div>
 
@@ -233,27 +240,27 @@
                 <div class="row col-12">
 
 
-                    <form action="mailto: fernandovelascomora@gmail.com" method="post" enctype="text/plain">
+                    <form action="mailto:fernandovelascomora@gmail.com" method="post" enctype="text/plain">
                         <fieldset>
                             <legend>Datos personales</legend>
                             <div class="control-group">
-                                <label for="nombre">Escribe tu nombre</label>
+                                <label for="nombre">Nombre</label>
 
                                 <input type="text" name="nombre" id="nombre" required>
                             </div>
                             <div class="control-group">
-                                <label for="apellidos">Escribe tu apellidos</label>
+                                <label for="apellidos">Apellidos</label>
 
                                 <input type="text" name="apellidos" id="apellidos" required>
                             </div>
                             <div class="control-group">
-                                <label for="mail">Escribe tu email</label>
+                                <label for="mail">Email</label>
 
                                 <input type="email" name="mail" id="mail" required>
                             </div>
                             <div class="control-group textarea">
                                 <!--  <label class="consulta" for="consulta">Escribe tu consulta</label> -->
-                                <textarea class="t_area" name="consulta" id="consulta" cols="50" rows="10" placeholder="Escribe tu consulta"></textarea>
+                                <textarea class="t_area" name="consulta" id="consulta" cols="50" rows="10" placeholder="Consulta"></textarea>
                             </div>
                             <div class="right">
                                 <p>Sheila Mora</p>
@@ -274,7 +281,7 @@
                 <div class="row">
                     <div class="map col-12">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.752429206305!2d-3.4766119488588947!3d40.45861616091322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42371dd031fe15%3A0xced883a6f0d4c738!2sCalle+de+la+Virgen+de+la+Paz%2C+2%2C+28850+Torrej%C3%B3n+de+Ardoz%2C+Madrid!5e0!3m2!1ses!2ses!4v1521546999025"
-                            width="1000" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            width="1000" height="400"  style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -282,7 +289,7 @@
             </section>
             <aside>
                 <div class=" col-12">
-                    <p class="info_contacto">Estamos en la c/Virgen de la Paz 2, 1ºC Torrejón de Ardoz(Madrid) </p>
+                    <p class="info_contacto">Estamos en la C/Virgen de la Paz 2, 1ºC Torrejón de Ardoz(Madrid) </p>
                 </div>
             </aside>
 
