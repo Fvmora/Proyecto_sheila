@@ -1300,6 +1300,11 @@ div.negro {
    
 
 }
+@media screen and (orientation: portrait) and (max-width: 768px){
+    div.negro {
+        height: 0px;
+    }
+}
 /* Form */
 .seccion_contacto {
     margin-top: 5%;
@@ -1307,6 +1312,7 @@ div.negro {
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 2%;
+   
     
     
     
@@ -1325,6 +1331,7 @@ h2.contacto {
     font-family: 'Overlock', cursive;
 }
 form {
+     display: block;
      width: 50%;
      margin-left: auto;
      margin-right: auto;
@@ -1371,6 +1378,25 @@ textarea {
     float: right;
 }
 
+@media screen and (orientation: portrait) and (max-width: 768px){
+    .seccion_contacto {
+        width: 100%;
+       }
+    form {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+   }
+   textarea {
+    float:left;
+    margin-top: 5%;
+    width: 70%;
+    height: 40%;
+}
+
+   
+}
+
 @media screen and (max-width: 812px) and (orientation: landscape){
     .seccion_contacto {
         margin-top: 5%;
@@ -1386,9 +1412,23 @@ textarea {
    }
 
 }
-/* @media screen and (max-width: 375px) and (orientation: portrait){
 
-} */
+
+@media screen and (max-width: 375px) and (orientation: portrait){
+    .seccion_contacto {
+            width: 100%;
+    }
+    form {
+            width: 100%;
+            margin-left:0.3rem;
+    }
+    textarea {
+        float:left;
+        margin-top: 5%;
+        width: 70%;
+        height: 40%;
+    }
+}
 iframe {
     clear: both;
     width: 100%;
