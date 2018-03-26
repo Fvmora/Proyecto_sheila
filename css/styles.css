@@ -145,10 +145,17 @@ ul.desplegable_equipo {
      
     
 }
+@media screen and (max-width: 1366px){
+    ul.desplegable_equipo{
+        width: 15rem;
+        height: 7rem;
+    }
+}
 
 
 ul.desplegable_equipo li {
     margin-top: 2rem;
+
 
 }
 a.equipo_li.equipo_li {
@@ -186,6 +193,12 @@ ul.desplegable_coaching {
     z-index: 5000;  
     
     
+}
+@media screen and (max-width: 1366px){
+    ul.desplegable_coaching{
+        width: 10rem;
+        height: 7rem;
+    }
 }
 ul.desplegable_coaching li.li_block {
     margin-top: 2rem;
@@ -309,6 +322,8 @@ main {
    
 }
 
+
+
 figure.img_primera {
     margin: 0;
     width: 100%;
@@ -380,12 +395,14 @@ video.video1 {
     figure.img_primera {
         height: 30rem;
     }
-    .oscuro {
+   /*  .oscuro {
         height: 30rem;
-    }
+    } */
    
 
 }
+
+
 /* revisar la flecha quizas hay que poner un fontawesome */
 div.flecha {
     width: 100%; 
@@ -524,7 +541,14 @@ div.container_parallax{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+@media screen and (max-width: 1366px) {
+    .parallax {
+        background-image: url("../images/caballos/caballos_sheilaMora-coaching_caballos_psicologia.jpg");
+        height: 50rem;
+        background-size: cover;
+    }
 }
 div.parallax p.noble{
     
@@ -619,6 +643,8 @@ div.icon_arriba_cont {
     color: var(--color-psicocaeliam);
 }
 
+/* Equipo */
+
 .nosotros_article {
     background-color: black;
     padding: 3rem;
@@ -657,8 +683,6 @@ figure.fig_img_sheila {
    
     background-color: black;
 
-   
-   
 }
 .img_sheila {
    
@@ -669,6 +693,60 @@ figure.fig_img_sheila {
    
 
 }
+@media screen and (max-width: 1366px){
+    figure.fig_img_sheila {
+        display: none;
+    }
+
+}
+figure.fig_img_sheila_vertical {
+   
+    width: 100%;
+    padding: 7%;
+    margin: 0;
+    margin-top: 10%;
+    display: none;
+   
+    background-color: black;
+
+}
+.img_sheila_vertical {
+   
+    border-radius: 20rem;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+@media screen and (max-width: 1366px){
+    figure.fig_img_sheila_vertical {
+        display: block;
+    }
+
+}
+figure.sala_espera {
+    width: 100%;
+    background-color: black;
+    display: none;
+    margin-top: 10%;
+}
+.img_sala{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1024px){
+    figure.sala_espera{
+        display: block;
+
+    }
+}
+
+
+/* caballos */
+
 div.container_image {
  
     min-height: 80vh;
@@ -686,6 +764,15 @@ figure.caballo_texto {
     margin-bottom: 0;
     position: relative;
     
+}
+@media screen and (max-width: 1366px){
+    figure.caballo_texto {
+        background-image: url("../images/animacion/caballo2_1024px.jpg");
+        background-size: contain;
+    }
+    div.container_image {
+        min-height: 70vh;
+    }
 }
 .animacion {
     width: 100%;
@@ -820,6 +907,11 @@ figure.caballo_texto {
     animation-duration: 0.5s;
 
 }
+/* @media screen and (max-width: 1024px){
+    .n4 {
+        display: none;
+    }
+} */
 
 /* menu navegacion caballos */
 nav.menu_coaching_cab {
@@ -850,6 +942,12 @@ nav.menu_coaching_cab>ul li {
     vertical-align: top;
     
 }
+@media screen and (max-width: 1366px){
+    nav.menu_coaching_cab {
+        height: 12rem;
+    }
+    
+}
 nav.menu_coaching_cab>ul li:not(:last-of-type){
     margin-left: 4%;
 }
@@ -872,6 +970,12 @@ div.negro {
     width: 100%; 
     height: 5rem;
 }
+@media screen and (max-width: 1366px){
+    div.negro {
+        height: 13rem;
+    }
+    
+}
 /* Form */
 .seccion_contacto {
     margin-top: 5%;
@@ -880,6 +984,14 @@ div.negro {
     background-size: contain;
     padding-top: 2%;
     
+    
+    
+}
+@media screen and (max-width:1366px){
+    .seccion_contacto{
+        background-image: url('../images/pag_primera/contacto_fondo_1024px.jpg');
+        background-size: cover;
+    }
 }
 h2.contacto {
     
