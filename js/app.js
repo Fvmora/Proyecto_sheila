@@ -8,6 +8,8 @@ setTimeout(function(){
 
 
 $(document).ready(function (e) {
+
+
     $('#idea').mouseenter(function (e) {
        
         $('#noble').fadeIn(1000);
@@ -15,6 +17,18 @@ $(document).ready(function (e) {
         $('#noble2').fadeIn(5000);
     
     });
+
+
+/*     ---------- */
+$('#burguer').click(function() {
+    $('#ul_caballos').fadeToggle()
+});
+
+$('#burguer0').click(function(){
+    $('#nav_inicio').fadeToggle()
+});
+
+
 
 
     var a = $('#button_equipo');
@@ -70,7 +84,7 @@ clearInterval();
     
 
 
-})
+});
 
 
 

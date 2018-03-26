@@ -73,13 +73,14 @@ header{
 }
 
 img.logo {
-    max-width: 100%;
+    width: 100%;
     display: block;
     /* position: relative;
     left: 0px;
     top: 0px;  */
     
 }
+
 
 
 
@@ -113,6 +114,11 @@ nav.nav_header {
     }
     
 } */
+@media screen and (orientation: portrait) and (max-width: 375px){
+    nav.nav_header {
+        display: none;
+    }
+}
 li.inicio {
     visibility: hidden;
 }
@@ -278,7 +284,7 @@ ul.menu_inicio>li.underline a:before, ul.menu_inicio>li.underline a:after {
         bottom: -10px;
         width: 0px;
         height: 5px;
-        margin: 5px 0 0;
+        margin: 5px 0 0 0;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         -webkit-transition-duration: 0.75s;
@@ -312,12 +318,76 @@ ul.menu_inicio>li.underline:hover a:before, ul.menu_inicio>li.underline:hover a:
       width: 20%;
       
   }
+  @media screen and (orientation: portrait) and (max-width: 375px){
+    
+    .burguer0 {
+        float: right;
+        width: 50%;
+        color: black;
+        font-size: 2rem;
+        text-align: right;
+      }
+      .span_logo {
+        display: block;
+        width: 50%;
+        float:left;
+    }
+    img.logo {
+        width: 200%;
+    }
+    .nav_header {
+        position: relative;
+       width:100%;
+       clear: both;
+       left: 0;
+      
+    }
+   
+    ul.menu_inicio {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 90000000;
+        background-color: white;
+
+
+    }
+    ul.menu_inicio li {
+        width: 20%;
+        text-align: left;
+        display: block;
+        margin: auto;
+        font-size: 1rem;
+    }
+    
+    ul.menu_inicio li.inicio{
+        display: none;
+       
+
+    }
+    ul.menu_inicio li.blog {
+        margin-bottom: 2rem;
+    }
+    
+    
+   
+    ul.menu_inicio li:not(:first-of-type){
+        margin-top: 2rem;
+    }
+    
+
+
+   
+  }
+
   
 
  
 
   /* main*/
 main {
+    clear:both;
     min-height: 100vh;
    
 }
@@ -373,6 +443,9 @@ figure.img_primera:hover .paisaje_debajo {
     
 }
 .paisaje_debajo1{
+    display: none;
+}
+.paisaje_debajo2 {
     display: none;
 }
 .paisaje_arriba1{
@@ -614,7 +687,83 @@ video.video1 {
     
     
 }
-
+@media screen and (orientation: portrait) and (max-width: 375px){
+    img.paisaje_debajo.paisaje_debajo{
+        display: none;
+    }
+    .paisaje_arriba.paisaje_arriba{
+        display:none;
+    }
+    figure.img_primera {
+        margin: 0;
+        width: 100%;
+        display: block;
+        height: 29rem;
+        overflow: hidden;
+        position: relative;
+        /* margin-bottom:5%; */
+    }
+    img.paisaje_arriba1.paisaje_arriba1 {
+        position: absolute;
+    
+        display: block;
+        max-width:100%; 
+        z-index: 3;
+        
+    }
+    
+    /* .oscuro{
+        background-color: rgba(0, 0, 0, .3);
+        position: absolute;
+        left: 0;
+        top: 0; 
+    
+        width: 100%;
+        height: 40rem;
+        z-index: 1;
+    }  */
+    figure.img_primera:hover .paisaje_arriba1{
+     
+        opacity: .0;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition-duration:2s;
+                transition-duration: 2s;
+    }
+    figure img.paisaje_debajo2.paisaje_debajo2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        display: none;
+    
+        width: 100%;
+        height: 30rem;
+        z-index: 2;
+    }
+    figure.img_primera:hover img.paisaje_debajo2.paisaje_debajo2 {
+        display: block;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition-duration:2s;
+                transition-duration: 2s;
+        
+    }
+    
+    video.video1{
+        display: none;
+    }
+    video.video2 {
+        display: block;
+        width: 350%;
+        opacity: 1;
+        position: absolute;
+        left:-20rem;
+        top: -8rem;
+        z-index: 0;   
+    }
+    
+}
 
 
 /* revisar la flecha quizas hay que poner un fontawesome */
@@ -692,6 +841,15 @@ div.flecha a {
     }
 }
 
+@media screen and (orientation: portrait) and (max-width: 375px){
+    div.flecha {
+        width: 100%; 
+        margin-bottom:3rem;  
+        margin-top: 3rem;
+        
+    }
+}
+
 
 
 p.enlace_consulta {
@@ -700,14 +858,7 @@ p.enlace_consulta {
     top: 30%;
     z-index: 5;
 }
-@media screen and (orientation: landscape) and (max-width: 1024px){
-    p.enlace_consulta {
-        position: absolute; 
-        right: 12%; 
-        top: 25%;
-        z-index: 5;
-    }
-}
+
 .aconsulta {
     text-decoration: none;
     color: white;
@@ -759,6 +910,23 @@ p.enlace_consulta a{
 @media screen and (max-width: 1800px) {
     .aconsulta {
         font-size: 3rem;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 1024px){
+    p.enlace_consulta {
+        position: absolute; 
+        right: 12%; 
+        top: 25%;
+        z-index: 5;
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 375px){
+    p.enlace_consulta {
+        position: absolute; 
+        left: 15%; 
+        top: 10%;
+        z-index: 5;
+        text-align: center;
     }
 }
 
@@ -826,6 +994,13 @@ div.container_parallax{
 @media screen and (max-width: 1366px) {
     .parallax {
         background-image: url("../images/caballos/caballos_sheilaMora-coaching_caballos_psicologia.jpg");
+        height: 50rem;
+        background-size: cover;
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 375px){
+    .parallax {
+        background-image: url("../images/pag_primera/horse_galaxy.jpg");
         height: 50rem;
         background-size: cover;
     }
@@ -913,6 +1088,15 @@ div.icon_arriba_cont {
     right: 2%;
     z-index: 2000000;
 
+}
+@media screen and (orientation: portrait) and (max-width: 375px){
+    div.icon_arriba_cont {
+        position: fixed;
+        bottom: 5%; 
+        right: 5%;
+        
+    
+    }
 }
 .icon_arriba a{
     font-size: 2rem;
@@ -1034,6 +1218,18 @@ figure.sala_espera {
 
     }
 }
+@media screen and (orientation: portrait) and (max-width: 375px){
+    .nosotros_article {
+        background-color: black;
+        padding: 3rem;
+        padding-bottom: 1rem;
+        color: #df9527;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        font-family: 'Lato', sans-serif;
+        
+    }
+}
 
 
 /* caballos */
@@ -1077,6 +1273,23 @@ figure.caballo_texto {
     div.container_image {
         min-height: 70vh;
     }
+}
+@media screen and (orientation: portrait) and (max-width: 375px){
+    figure.caballo_texto {
+       
+        background-image: url("../images/animacion/caballo2_375px.jpg");
+       
+        background-size: contain;
+        
+        
+    }
+    div.container_image {
+        min-height: 80vh;
+        margin-top: 1rem;
+       
+
+    }
+
 }
 .animacion {
     width: 100%;
@@ -1279,9 +1492,49 @@ nav.menu_coaching_cab>ul li a {
    
 
 }
+.burguer {
+    display: none;
+}
+@media screen and (orientation: portrait) and (max-width: 375px){
+.menu_coaching_cab {
+    position: relative;
+  }
+.burguer {
+    display: block;
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+}
+/*     ------ */
+    nav.menu_coaching_cab>ul {
+        height: 12rem;
+        width: 100%;
+        background-color: rgb(224, 224, 224);
+        display: none;
+        position: absolute;
+        bottom: 15rem;
+       
+
+    }
+    
+    nav.menu_coaching_cab>ul li {    
+        width: 100%;
+        text-align: center;;
+        margin-left:auto;
+        margin-right: auto;
+        margin-top:6%;
+        display: block;        
+    }
+    nav.menu_coaching_cab>ul li a {
+        font-size: 0.8rem;
+        color: black;
+    }
+
+}
 nav.menu_coaching_cab>ul li a:hover{
     color: var(--color-psicocaeliam);
 }
+
 div.negro {
     background-color: black;
     width: 100%; 
