@@ -378,6 +378,12 @@ figure.img_primera:hover .paisaje_debajo {
 .paisaje_arriba1{
     display:none;
 }
+.video2 {
+    display: none;
+}
+/* .paisaje_812px {
+    display: none;
+} */
 
 img.paisaje_arriba {
     position: absolute;
@@ -402,7 +408,7 @@ video.video1 {
         height: 30rem;
     }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) and (orientation: portrait){
     img.paisaje_arriba.paisaje_arriba{
         display: none;
         
@@ -466,9 +472,73 @@ video.video1 {
     }
 }
 
-/* max height */
-@media screen and (max-height: 768px){
-    .paisaje_debajo1.paisaje_debajo1{
+/* max width: 768px */
+@media screen and (max-width: 768px){
+    img.paisaje_arriba.paisaje_arriba{
+        display: none;
+        
+    }
+    figure.img_primera {
+        
+        height: 48rem;
+        overflow: hidden;
+        position: relative;
+       
+    }
+   
+    img.paisaje_arriba1 {
+        position: absolute;
+        display: block;
+        max-width:100%; 
+        z-index: 3;
+        
+    }
+    figure.img_primera:hover .paisaje_arriba1{
+ 
+        opacity: .0;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition-duration:2s;
+                transition-duration: 2s;
+    }
+    
+    .paisaje_debajo{
+        display: none;
+    }
+    .paisaje_debajo1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 1;
+        display: none;
+    
+        width: 100%;
+        
+        z-index: 2;
+    }
+    figure.img_primera:hover .paisaje_debajo1 {
+        display: block;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        -webkit-transition-duration:2s;
+                transition-duration: 2s;
+        
+    }
+    
+    figure video.video1.video1 {
+        width:200%;
+       
+        opacity: 1;
+    
+        position: absolute;
+        top: 17rem;
+        left: -25rem;
+        z-index: 0;   
+    }
+}
+/* max height: 768*/
+@media screen and (orientation: landscape) and (max-width: 1024px){
+    img.paisaje_debajo1.paisaje_debajo1{
         display: none;
     }
     .paisaje_arriba1.paisaje_arriba1{
@@ -510,7 +580,7 @@ video.video1 {
         -webkit-transition-duration:2s;
                 transition-duration: 2s;
     }
-    img.paisaje_debajo.paisaje_debajo {
+    figure img.paisaje_debajo.paisaje_debajo {
         position: absolute;
         left: 0;
         top: 0;
@@ -521,7 +591,7 @@ video.video1 {
         height: 30rem;
         z-index: 2;
     }
-    figure.img_primera:hover .paisaje_debajo.paisaje_debajo {
+    figure.img_primera:hover img.paisaje_debajo.paisaje_debajo {
         display: block;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
@@ -532,11 +602,12 @@ video.video1 {
     
     
     
-    video.video1.video1 {
-        width:150%;
+    video.video1.video1.video1 {
+        width: 150%;
         opacity: 1;
     
         position: absolute;
+        top: -20rem;
 
         z-index: 0;   
     }
@@ -587,7 +658,7 @@ div.flecha a {
     
     }
 }
-@media screen and (max-height: 768px){
+@media screen and (orientation: landscape) and (max-width: 1024px){
     div.flecha {
         width: 100%; 
         margin-bottom: 1.5rem;  
@@ -603,6 +674,23 @@ div.flecha a {
     
     }
 }
+@media screen and (orientation: landscape) and (max-width: 812px){
+    
+    div.flecha {
+        width: 100%; 
+        margin-bottom:0.5rem;  
+        margin-top: -3rem;
+    }
+    div.flecha a {
+        width: 100%;
+        color: black;
+        display: block;
+        
+        text-align: center;
+        font-size:3rem;
+    
+    }
+}
 
 
 
@@ -611,6 +699,14 @@ p.enlace_consulta {
     right: 22%; 
     top: 30%;
     z-index: 5;
+}
+@media screen and (orientation: landscape) and (max-width: 1024px){
+    p.enlace_consulta {
+        position: absolute; 
+        right: 12%; 
+        top: 25%;
+        z-index: 5;
+    }
 }
 .aconsulta {
     text-decoration: none;
@@ -858,6 +954,17 @@ div.icon_arriba_cont {
      
 
 }
+@media screen and (orientation: portrait) and (max-width: 768px){
+    .nosotros_article {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 812px){
+    .nosotros_article {
+        font-size: 0.7rem;
+    }
+}
+
 figure.fig_img_sheila {
    
     width: 100%;
@@ -953,6 +1060,19 @@ figure.caballo_texto {
     figure.caballo_texto {
         background-image: url("../images/animacion/caballo2_1024px.jpg");
         background-size: contain;
+    }
+    div.container_image {
+        min-height: 70vh;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 812px){
+    figure.caballo_texto {
+       
+        background-image: url("../images/animacion/caballo2_812px.jpg");
+       
+        background-size: contain;
+        
+        
     }
     div.container_image {
         min-height: 70vh;
@@ -1106,6 +1226,7 @@ nav.menu_coaching_cab {
 
     color: white;
 }
+
 nav.menu_coaching_cab>ul{
     
     height: 2rem;
@@ -1132,6 +1253,7 @@ nav.menu_coaching_cab>ul li {
     }
     
 }
+
 nav.menu_coaching_cab>ul li:not(:last-of-type){
     margin-left: 4%;
 }
@@ -1144,6 +1266,17 @@ nav.menu_coaching_cab>ul li a {
     color: white;
     text-decoration: none;
 
+
+}
+@media screen and (orientation: landscape) and (max-width: 812px){
+    nav.menu_coaching_cab {
+        height: 8rem;
+       
+    }
+    nav.menu_coaching_cab>ul li a {
+        font-size: 0.8rem;
+    }
+   
 
 }
 nav.menu_coaching_cab>ul li a:hover{
@@ -1159,6 +1292,13 @@ div.negro {
         height: 13rem;
     }
     
+}
+@media screen and (orientation: landscape) and (max-width: 812px){
+    div.negro {
+        height: 2rem;
+    }
+   
+
 }
 /* Form */
 .seccion_contacto {
@@ -1230,6 +1370,25 @@ textarea {
 .button-group {
     float: right;
 }
+
+@media screen and (max-width: 812px) and (orientation: landscape){
+    .seccion_contacto {
+        margin-top: 5%;
+        background-image: url('../images/pag_primera/contacto_fondo_1024px.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-top: 2%;
+        
+    }
+    form {
+        width: 90%;
+       
+   }
+
+}
+/* @media screen and (max-width: 375px) and (orientation: portrait){
+
+} */
 iframe {
     clear: both;
     width: 100%;
