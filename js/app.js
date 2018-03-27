@@ -1,8 +1,8 @@
 
 
-/* $('#body').css('display', 'none'); */
+
 setTimeout(function(){
- /* $('#body').css('display', 'block'); */
+ 
  $('#counter').css('display', 'none');
 }, 2000);
 

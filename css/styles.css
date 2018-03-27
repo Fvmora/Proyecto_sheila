@@ -57,6 +57,22 @@ span.mail {
 img.tfno_icon, .mail_icon, .face_icon, .linkedin_icon {
     height: 2rem;
 }
+@media screen and (orientation: portrait) and (max-width: 375px){
+    nav.top {
+        font-size: 0.8rem;
+       
+    }
+    
+   /*  img.mail_icon {
+        width: 3rem;
+        
+        
+    } */
+    
+    .face_icon, .linkedin_icon{
+        display: none;
+    }
+}
 header{   
     max-width: 100%;
     background-color: white;
@@ -114,11 +130,7 @@ nav.nav_header {
     }
     
 } */
-@media screen and (orientation: portrait) and (max-width: 375px){
-    nav.nav_header {
-        display: none;
-    }
-}
+
 li.inicio {
     visibility: hidden;
 }
@@ -318,10 +330,14 @@ ul.menu_inicio>li.underline:hover a:before, ul.menu_inicio>li.underline:hover a:
       width: 20%;
       
   }
+  .burguer0 {
+      display: none;
+  }
   @media screen and (orientation: portrait) and (max-width: 375px){
     
     .burguer0 {
-        float: right;
+        display: block;
+        float: left;
         width: 50%;
         color: black;
         font-size: 2rem;
@@ -340,10 +356,12 @@ ul.menu_inicio>li.underline:hover a:before, ul.menu_inicio>li.underline:hover a:
        width:100%;
        clear: both;
        left: 0;
+       
       
     }
    
     ul.menu_inicio {
+        display: none;
         position: absolute;
         width: 100%;
         top: 0;
@@ -375,9 +393,40 @@ ul.menu_inicio>li.underline:hover a:before, ul.menu_inicio>li.underline:hover a:
     ul.menu_inicio li:not(:first-of-type){
         margin-top: 2rem;
     }
+
+    /* equipo */
+    ul.desplegable_equipo {
+        width: 15rem;
+        height: 8rem;
+        
+    }
+    ul.desplegable_equipo li {
+        margin-left: 0.8rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    ul.desplegable_equipo li>a{
+        
+        font-size: 0.8rem;
+    }
     
-
-
+  /*   coaching */
+    ul.desplegable_coaching {
+        width: 10rem;
+        height: 8rem;
+        
+    }
+    ul.desplegable_coaching.desplegable_coaching li {
+        margin-top: 1.3rem;
+        margin-left: 0.8rem;
+        
+       
+        width: 100%;
+    }
+    ul.desplegable_coaching li>a{
+        
+        font-size: 0.8rem;
+    }
    
   }
 
@@ -1673,7 +1722,9 @@ textarea {
     }
     form {
             width: 100%;
-            margin-left:0.3rem;
+            margin-left:0rem;
+            border: 0px;
+            border-radius: 10px;
     }
     textarea {
         float:left;
