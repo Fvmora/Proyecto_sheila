@@ -4,7 +4,7 @@
 setTimeout(function(){
  
  $('#counter').css('display', 'none');
-}, 2000);
+}, 4000);
 
 
 $(document).ready(function (e) {
