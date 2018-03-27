@@ -57,7 +57,7 @@ span.mail {
 img.tfno_icon, .mail_icon, .face_icon, .linkedin_icon {
     height: 2rem;
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait) */ and (max-width: 375px){
     nav.top {
         font-size: 0.8rem;
        
@@ -333,7 +333,7 @@ ul.menu_inicio>li.underline:hover a:before, ul.menu_inicio>li.underline:hover a:
   .burguer0 {
       display: none;
   }
-  @media screen and (orientation: portrait) and (max-width: 375px){
+  @media screen/*  and (orientation: portrait)  */and (max-width: 375px){
     
     .burguer0 {
         display: block;
@@ -736,7 +736,7 @@ video.video1 {
     
     
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait) */ and (max-width: 375px){
     img.paisaje_debajo.paisaje_debajo{
         display: none;
     }
@@ -890,7 +890,7 @@ div.flecha a {
     }
 }
 
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait)  */and (max-width: 375px){
     div.flecha {
         width: 100%; 
         margin-bottom:3rem;  
@@ -969,7 +969,7 @@ p.enlace_consulta a{
         z-index: 5;
     }
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen/*  and (orientation: portrait) */ and (max-width: 375px){
     p.enlace_consulta {
         position: absolute; 
         left: 15%; 
@@ -1047,7 +1047,7 @@ div.container_parallax{
         background-size: cover;
     }
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen and /* (orientation: portrait) and  */(max-width: 375px){
     .parallax {
         background-image: url("../images/pag_primera/horse_galaxy.jpg");
         height: 50rem;
@@ -1138,7 +1138,7 @@ div.icon_arriba_cont {
     z-index: 2000000;
 
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait) */ and (max-width: 375px){
     div.icon_arriba_cont {
         position: fixed;
         bottom: 5%; 
@@ -1267,7 +1267,7 @@ figure.sala_espera {
 
     }
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait) */ and (max-width: 375px){
     .nosotros_article {
         background-color: black;
         padding: 3rem;
@@ -1323,7 +1323,7 @@ figure.caballo_texto {
         min-height: 70vh;
     }
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait) */ and (max-width: 375px){
     figure.caballo_texto {
        
         background-image: url("../images/animacion/caballo2_375px.jpg");
@@ -1544,7 +1544,7 @@ nav.menu_coaching_cab>ul li a {
 .burguer {
     display: none;
 }
-@media screen and (orientation: portrait) and (max-width: 375px){
+@media screen /* and (orientation: portrait) */ and (max-width: 375px){
 .menu_coaching_cab {
     position: relative;
   }
@@ -1716,7 +1716,7 @@ textarea {
 }
 
 
-@media screen and (max-width: 375px) and (orientation: portrait){
+@media screen and (max-width: 375px) /* and (orientation: portrait) */{
     .seccion_contacto {
             width: 100%;
     }
