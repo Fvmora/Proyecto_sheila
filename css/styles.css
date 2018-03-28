@@ -500,6 +500,9 @@ figure.img_primera:hover .paisaje_debajo {
 .paisaje_arriba1{
     display:none;
 }
+.paisaje_arriba2{
+    display: none;
+}
 .video2 {
     display: none;
 }
@@ -743,6 +746,9 @@ video.video1 {
     .paisaje_arriba.paisaje_arriba{
         display:none;
     }
+    .paisaje_arriba1.paisaje_arriba1{
+        display:none;
+    }
     figure.img_primera {
         margin: 0;
         width: 100%;
@@ -752,7 +758,7 @@ video.video1 {
         position: relative;
         /* margin-bottom:5%; */
     }
-    img.paisaje_arriba1.paisaje_arriba1 {
+    img.paisaje_arriba2.paisaje_arriba2{
         position: absolute;
     
         display: block;
@@ -771,7 +777,7 @@ video.video1 {
         height: 40rem;
         z-index: 1;
     }  */
-    figure.img_primera:hover .paisaje_arriba1{
+    figure.img_primera:hover .paisaje_arriba2{
      
         opacity: .0;
         -webkit-transition: all 0.2s ease-in-out;
@@ -1338,6 +1344,9 @@ figure.caballo_texto {
        
 
     }
+    .animacion {
+        display: none;
+    }
 
 }
 .animacion {
@@ -1719,6 +1728,7 @@ textarea {
 @media screen and (max-width: 375px) and (orientation: portrait){
     .seccion_contacto {
             width: 100%;
+            background-image: url('../images/pag_primera/contacto_fondo_375px.jpg');
     }
     form {
             width: 100%;
