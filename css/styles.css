@@ -909,15 +909,15 @@ div.flecha a {
 
 p.enlace_consulta {
     position: absolute; 
-    right: 22%; 
-    top: 30%;
+    right: 16%; 
+    top: 16%;
     z-index: 5;
 }
 
 .aconsulta {
     text-decoration: none;
     color: white;
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: 'Overlock', cursive;
     letter-spacing: 1px;
     
