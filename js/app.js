@@ -1,16 +1,30 @@
 
 
 
-setTimeout(function(){
- 
- $('#counter').css('display', 'none');
-}, 4000);
+
+    
+let crono = 0
+let idT = setInterval(function(){
+    crono += 1000
+    cargarPagina(crono)
+}, 1000);
+function cargarPagina(crono) {
+    if(crono === 5000){
+        
+        clearInterval(idT)
+        $('#counter').css('display', 'none');
+    }
+}
 
 
-$(document).ready(function (e) {
 
 
-    $('#idea').mouseenter(function (e) {
+$(document).ready(function () {
+    
+  
+    
+
+    $('#idea').mouseenter(function () {
        
         $('#noble').fadeIn(1000);
         $('#noble1').fadeIn(3000);
@@ -37,25 +51,25 @@ $('#burguer0').click(function(){
     var d = $('#desp_coach');
 
 /* desplegable equipo */
-    a.mouseenter(function (e) {
+    a.mouseenter(function () {
 
         b.slideDown();
 
 
     })
-    c.mouseenter(function (e) {
+    c.mouseenter(function () {
 
         d.slideDown();
 
 
     })
-    b.mouseleave(function (e) {
+    b.mouseleave(function () {
 
         b.slideUp();
 
 
     })
-    d.mouseleave(function (e) {
+    d.mouseleave(function () {
 
         d.slideUp();
 
@@ -68,7 +82,7 @@ $('#burguer0').click(function(){
     a,c.mouseout(setInterval(offUp, 6000));
 
 /* desplegable coaching */
-clearInterval();
+
 
 
   
