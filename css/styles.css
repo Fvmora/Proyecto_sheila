@@ -598,8 +598,8 @@ video.video1 {
     }
 }
 
-/* max width: 768px */
-@media screen and (max-width: 768px){
+/* max width: 890px */
+@media screen and (max-width: 890px){
     img.paisaje_arriba.paisaje_arriba{
         display: none;
         
@@ -828,13 +828,13 @@ div.flecha {
     margin-bottom: 8rem;  
 }
 
-@media screen and (max-width: 1366px){
+/* @media screen and (max-width: 1366px){
     div.flecha {
         width: 100%; 
           
         margin-top: 15rem;
     }
-}
+} */
 
 
 
