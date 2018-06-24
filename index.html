@@ -25,9 +25,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
    <!--  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.css"> -->
-    <!--  bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <!--  bootstrap  -->
+   <!--Pasarle los bootstrap locales y meterle bootstrap a todo-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- comentamos el cdn a bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="./css/bootstrap_grid.css"> -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- <link rel="stylesheet" href="./css/styles.scss"> -->
@@ -42,11 +45,11 @@
     <div class="container-fluid wrap">
 
         <!--   counter -->
-        <div class="counter" id="counter">
+        <!-- <div class="counter" id="counter">
             <figure>
                 <img src="./images/gif/Caballo-corriendo blog 4.gif" alt="Caballo corriendo">
             </figure>
-        </div>
+        </div> -->
         <!--  counter -->
 
         <div class="row no-gutters">
@@ -97,7 +100,7 @@
                             </ul>
                         </li>
                         <li class="psicologia underline">
-                            <a href="">PSICOLOGÍA</a>
+                            <a href="html/psicologia.html">PSICOLOGÍA</a>
                         </li>
                         <li class="coaching underline">
                             <a href="#ningun_sitio" id="button_coach">COACHING</a>
@@ -106,7 +109,7 @@
                                     <a class="a_coaching coach" href="#">COACHING</a>
                                 </li>
                                 <li class="li_block">
-                                    <a class="a_coaching caballos" href="#enlace1">CABALLOS</a>
+                                    <a class="a_coaching caballos" href="html/coachingCaballos.html">CABALLOS</a>
                                 </li>
                             </ul>
 
@@ -128,26 +131,26 @@
                 <!-- primer bloque de imagenes para desktop -->
                 <figure class="img_primera p_desktop col-xs-12">
 
-                    <img class="paisaje_arriba" src="./images/pag_primera/buena1 copia 2.png" alt="Paisaje">
+                    <img class="img-fluid paisaje_arriba" src="./images/pag_primera/buena1 copia 2.png" alt="Paisaje">
 
-                    <img class="paisaje_arriba1" src="./images/pag_primera/buena1_1204px.png" alt="Paisaje">
+                    <!-- <img class="paisaje_arriba1" src="./images/pag_primera/buena1_1204px.png" alt="Paisaje">
 
-                    <img class="paisaje_arriba2" src="./images/pag_primera/buena1_414px_reducido.png" alt="Paisaje">
+                    <img class="paisaje_arriba2" src="./images/pag_primera/buena1_414px_reducido.png" alt="Paisaje"> -->
 
 
                     <!-- <img class="paisaje_debajo" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1920px.jpg" alt="Paisaje"> -->
 
-                    <img class="paisaje_debajo" src="./images/pag_primera/02_1920.jpg" alt="Paisaje">
+                    <img class="img-fluid paisaje_debajo" src="./images/pag_primera/02_1920.jpg" alt="Paisaje">
 
 
-                    <img class="paisaje_debajo1" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1024px1.jpg" alt="Paisaje">
+                    <!-- <img class="paisaje_debajo1" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_1024px1.jpg" alt="Paisaje">
 
-                    <img class="paisaje_debajo2" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_375px1.jpg" alt="Paisaje">
+                    <img class="paisaje_debajo2" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_375px1.jpg" alt="Paisaje"> -->
 
                     <!--  <img class="paisaje_812px" src="./images/pag_primera/psicologia_sheila_mora_consulta_coaching_caballos_812x300px.jpg" alt="Paisaje"> -->
 
 
-                    <video class="video1" src="./images/videos/video_alta_preparado.mp4" autoplay preload muted loop></video>
+                    <video class="img-fluid video1" src="./images/videos/video_alta_preparado.mp4" autoplay preload muted loop></video>
                     
 
                     <video class="video2" src="./images/videos/video_baja_preparado_1.mp4" autoplay preload muted loop></video>
@@ -198,86 +201,47 @@
             <div class="row overflow">
                 <article id="equipo" class="nosotros_article  col-12 col-md-6">
                     <section>
-                        <h2>EQUIPO</h2>
-                        <p class="pr_letra">Soy Sheila Mora López, Psicóloga Sanitaria y Coach con Caballos.</p>
-                        <p>En este apartado voy a dar unas pinceladas de mi formación y experiencia profesional, pero intentando
-                            no aburrir (quién quiera mas información que no dude en ponerse en contacto).</p>
+                        <h2>¿QUÉ ES PSICOCAELIAM?</h2>
+                        <p class="pr_letra">Es una consulta de psicología sanitaria, que entre otras especialidades, ofrece la posibilidad de realizar psicoterapia y coaching con caballos, para las personas.</p>
+                        
+                        <p class="pr_letra">PsicoCaeliam es, además de una consulta de psicología, una forma de vida. El concepto surge de las experiencias de su fundadora Sheila Mora. Caeliam proviene del latín, y es el nombre que se deriva de la traducción de Sheila en la Compostela que te conceden tras realizar el Camino de Santiago. </p>
+
+                        <p class="pr_letra">El Camino es una filosofía de vida que se entrelaza con la ideología de PsicoCaeliam, pues se presenta como un reto personal, en el que cada día hay que levantarse y caminar hacia tu meta o metas. Puedes tener momentos mejores o peores, pero siempre hay que levantarse y seguir adelante. Pero no de cualquier forma, sino intentando disfrutar al máximo cada paso, cada momento, el aquí y el ahora.</p>
+                        <p class="pr_letra">En todo momento, PsicoCaeliam funde elementos de la psicología, de la naturaleza, el ejercicio…en definitiva una forma de vida saludable que nos ayude a alcanzar el bienestar mental y físico.</p>
                     </section>
                     <section>
-                        <h4>MOTIVACIÓN</h4>
-                        <p class="pr_letra">Desde pequeña me gustaba escuchar a la gente, observar e intentar ayudar en todo lo que podía o estaba
-                            a mi alcance. No sabía lo que era la psicología, así que como la mayoría de niños/as quería ser
-                            veterinaria, astronauta, etc. Pero una mala praxis de una psicóloga con un familiar mio, me hizo
-                            darme cuenta de cuál era mi vocación y cuál quería que fuera mi profesión. Quería evitar que
-                            otras personas pasaran por la misma situación que mi familiar (que a día de hoy, gracias a otra
-                            colega de profesión está bien). Así que, además de vocacional, soy psicóloga con principios!!</p>
+                            <h2>MI HISTORIA</h2>
+                            <p class="pr_letra">Desde pequeña me gustaba escuchar a la gente, observar e intentar ayudar en todo lo que podía o estaba a mi alcance. No sabía lo que era la psicología, así que como la mayoría de niños/as quería ser veterinaria, astronauta, etc. Pero una mala praxis de una psicóloga con un familiar muy cercano, me hizo darme cuenta de cuál era mi vocación y cuál quería que fuera mi profesión. Quería evitar que otras personas pasaran por la misma situación que mi familiar (que a día de hoy, gracias a otra colega de profesión está bien). Así que, además de vocacional, soy psicóloga con principios!! Por ello, me he ido formando, y continuo formándome, para poder ofrecer el mejor servicio a mis clientes/as (ver apartado de formación).</p>
                     </section>
                     <section>
-                        <h4>FORMACIÓN</h4>
-                        <p class="pr_letra">Por ello me he ido formando (y sigo formándome continuamente), primero obtuve la Licenciatura en
-                            Psicología en la Universidad Complutense de Madrid. Después hice un Master sobre La Salud de
-                            las Mujeres en la Universidad Complutense de Madrid, también soy Magister en Intervención con
-                            personas de educación especial, Experta en Orientación e Inserción Laboral, Coach para Titulados
-                            en Psicología en Euroinnova Busines School, y entre otros más el que más ilusión me hace Coach
-                            con Caballos por la Escuela Internacional de Coaching con Caballos EQUILIBRI.</p>
-                        <p>También he realizado voluntariados en Intervenciones Asistidas con Caballos en las Asociaciones Maira
-                            y Equura. Para finalmente decidirme a abrir mi propia consulta de psicología en la clínica del
-                            Dr.L.A.Monge (médico nutricionista) al que agradezco su apoyo. Y he colaborado en cursos formativos
-                            (como formadora de formadores) en universidades como la Universidad Rey Juan Carlos, U.N.E.D,
-                            La Salle, etc.</p>
+                            <h2>FORMACIÓN PROFESIONAL</h2>
+                            <p class="pr_letra">Psicóloga Sanitaria Colegiada M-27.255.</p>
+                            <p class="pr_letra">Certificada Internacional en Psicología y Coaching Asistidos con Caballos (E.I.C.C.E.).</p>
+                            <p class="pr_letra">Directora y fundadora de la consulta PsicoCaeliam. </p>
+                            <p class="pr_letra">Magister en Salud de las Mujeres.</p>
+                            <p class="pr_letra">Magister en Intervención con Personas de Educación Especial.</p>
+                            <p class="pr_letra">Coach de desarrollo empresarial y personal.</p>
+                            <p class="pr_letra">Experta en orientación e inserción laboral. </p>
+                            <p class="pr_letra">Voluntariados en Intervenciones Asistidas con Caballos en las Asociaciones Maira, Equura, Equinoterapia Madrid Sur. </p>
+                            <p class="pr_letra">También he colaborado en cursos formativos (como formadora de formadores)  en universidades como la Universidad Rey Juan Carlos, U.N.E.D, La Salle, etc.</p>
                     </section>
 
                 </article>
 
                 <article class="container_img_sheila  col-12   col-md-6">
-                    <figure class="fig_img_sheila ">
+                    <!-- <figure class="fig_img_sheila ">
                         <img class="img_sheila" src="./images/sheila/sheila.jpg" alt="La psicóloga Sheila Mora mira directamente a la cámara sonriente.">
-                    </figure>
+                    </figure> -->
                     <figure class="fig_img_sheila_vertical ">
                         <img class="img_sheila_vertical" src="./images/sheila/sheila_vertical1.jpg" alt="La psicóloga Sheila Mora mira directamente a la cámara sonriente.">
                     </figure>
-                    <figure class="sala_espera">
-                        <img class="img_sala" src="./images/sheila/001.jpg" alt="Sala de espera de la consulta donde trabaja Sheila Mora"> </figure>
+                    <!-- <figure class="sala_espera">
+                        <img class="img_sala" src="./images/sheila/001.jpg" alt="Sala de espera de la consulta donde trabaja Sheila Mora"> </figure> -->
                 </article>
             </div>
-            <section>
-                <div class="row container_image no-gutters overflow" id="enlace1">
+            
 
-                    <figure class="col-6 caballo_texto ">
-                        <img class="animacion n0" src="./images/animacion/capa0.png" alt="animacion de texto">
-                        <img class="animacion n1" src="./images/animacion/capa1.png" alt="animacion de texto">
-                        <img class="animacion n2" src="./images/animacion/capa2.png" alt="animacion de texto">
-                        <img class="animacion n3" src="./images/animacion/capa3.png" alt="animacion de texto">
-                        <img class="animacion n4" src="./images/animacion/capa3.png" alt="animacion de texto">
-                    </figure>
-
-                </div>
-                <nav class="row menu_coaching_cab">
-
-                    <div class=" col-12 burguer" id="burguer">
-                        <i class="fas fa-bars"></i>
-                    </div>
-
-                    <ul class="col-12 menu_coach_centrado" id="ul_caballos">
-                        <li>
-                            <a href="#">¿QUÉ ES EL COACHING CON CABALLOS?</a>
-                        </li>
-                        <li>
-                            <a href="#">DESARROLLO</a>
-                        </li>
-                        <li>
-                            <a href="#">TALLERES</a>
-                        </li>
-                        <li>
-                            <a href="#">FORMACIÓN EMPRESARIAL</a>
-                        </li>
-                    </ul>
-                </nav>
-
-            </section>
-            <div class="negro"></div>
-
-            <section class="seccion_contacto" id="formulario">
+            <!-- <section class="seccion_contacto" id="formulario">
                 <div class="row">
                     <h2 class="contacto col-12">CONTACTO</h2>
                 </div>
@@ -303,9 +267,9 @@
 
                                 <input type="email" name="mail" id="mail" required>
                             </div>
-                            <div class="control-group textarea">
+                            <div class="control-group textarea"> -->
                                 <!--  <label class="consulta" for="consulta">Escribe tu consulta</label> -->
-                                <textarea class="t_area" name="consulta" id="consulta" cols="50" rows="10" placeholder="Consulta"></textarea>
+                               <!--  <textarea class="t_area" name="consulta" id="consulta" cols="50" rows="10" placeholder="Consulta"></textarea>
                             </div>
                             <div class="right">
                                 <p>Sheila Mora</p>
@@ -331,8 +295,12 @@
                 </div>
 
 
-            </section>
-            <aside>
+            </section> -->
+            <aside class="row">
+                    <div class="map col-12">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.752429206305!2d-3.4766119488588947!3d40.45861616091322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42371dd031fe15%3A0xced883a6f0d4c738!2sCalle+de+la+Virgen+de+la+Paz%2C+2%2C+28850+Torrej%C3%B3n+de+Ardoz%2C+Madrid!5e0!3m2!1ses!2ses!4v1521546999025"
+                                width="1000" height="400" style="border:0" allowfullscreen></iframe>
+                     </div>
                 <div class=" col-12">
                     <p class="info_contacto">Estamos en la C/Virgen de la Paz 2, 1ºC Torrejón de Ardoz(Madrid) </p>
                 </div>
@@ -380,10 +348,12 @@
     <!--   bootstrap -->
    <!--  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>-->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- comentamos el cdn js a bootstrap
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script> 
+        crossorigin="anonymous"></script>  -->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
    
   <!--   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->

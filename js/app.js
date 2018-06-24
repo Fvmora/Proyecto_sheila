@@ -3,7 +3,7 @@
 
 
     
-let crono = 0
+/* let crono = 0
 let idT = setInterval(function(){
     crono += 1000
     cargarPagina(crono)
@@ -14,7 +14,7 @@ function cargarPagina(crono) {
         clearInterval(idT)
         $('#counter').css('display', 'none');
     }
-}
+} */
 
 
 
