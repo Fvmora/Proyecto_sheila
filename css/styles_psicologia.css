@@ -1,18 +1,29 @@
+
+.oculto{
+    display: none;
+}
+.imagenes {
+    position: relative;
+   height:40rem;
+}
+
 figure.sala_espera {
-    
-    background-color: black;
-    
+    position: absolute;
+   
+    z-index: 2;
     
 }
 .img_sala{
-   
+    
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 figure.fig_img_sheila {
+    position: absolute;
     
-    background-color: black;
+    z-index: 1;
 
 }
 .img_sheila {
@@ -21,6 +32,17 @@ figure.fig_img_sheila {
    
     margin-left: auto;
     margin-right: auto;
-   
-
+    
+}
+h2 {
+    font-size: 2.5rem;
+}
+.texto{
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+}
+section{
+    margin-bottom: 3rem;
 }

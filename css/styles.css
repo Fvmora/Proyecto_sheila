@@ -513,7 +513,7 @@ figure.img_primera:hover .paisaje_debajo {
 
 img.paisaje_arriba {
     position: absolute;
-
+    width: 100%;
     display: block;
     max-width:100%; 
     z-index: 3;

@@ -4,6 +4,9 @@ div.container_image {
     background-color: black;
 
 }
+.no_visible.no_visible {
+    display: none;
+}
 figure.caballo_texto {
     width: 100%;
     background-image: url("../images/animacion/caballo2.jpg");
@@ -305,10 +308,23 @@ nav.menu_coaching_cab>ul li a:hover{
 div.negro {
     background-color: black;
     width: 100%; 
-    height: 5rem;
+    height: 2rem;
+    margin-Bottom: 2%;
+}
+.texto{
+    
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: 'Lato', sans-serif;
+}
+.dejate {
+    margin-top: 10%;
+    color:#df9527;
+    text-align: center;
+    
 }
 
-div.icon_arriba_cont {
+/* div.icon_arriba_cont.icon_arriba_cont {
     position: fixed;
     bottom: 1%; 
     right: 2%;
@@ -319,9 +335,10 @@ div.icon_arriba_cont {
 .icon_arriba a{
     font-size: 2rem;
     color: grey;
+    
 
 }
 .icon_arriba a:hover{
     color: var(--color-psicocaeliam);
-}
+} */
 
